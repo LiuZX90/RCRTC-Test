@@ -1,0 +1,111 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (6.5.6)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.2)
+  - MJRefresh (3.5.0)
+  - RongCloudIM (4.0.3.1):
+    - RongCloudIM/IMKit (= 4.0.3.1)
+    - RongCloudIM/IMLib (= 4.0.3.1)
+    - RongCloudIM/RongSticker (= 4.0.3.1)
+    - RongCloudIM/Sight (= 4.0.3.1)
+  - RongCloudIM/IMKit (4.0.3.1):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (4.0.3.1)
+  - RongCloudIM/RongSticker (4.0.3.1):
+    - RongCloudIM/IMKit
+  - RongCloudIM/Sight (4.0.3.1):
+    - RongCloudIM/IMKit
+  - RongCloudRTC (4.0.3.3):
+    - RongCloudRTC/RongCallKit (= 4.0.3.3)
+    - RongCloudRTC/RongCallLib (= 4.0.3.3)
+  - RongCloudRTC/RongCallKit (4.0.3.3):
+    - RongCloudIM/IMKit (~> 4.0.3)
+    - RongCloudIM/IMLib (~> 4.0.3)
+    - RongCloudRTC/RongCallLib
+  - RongCloudRTC/RongCallLib (4.0.3.3):
+    - RongCloudIM/IMLib (~> 4.0.3)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
+  - SocketRocket (0.5.1)
+  - WechatOpenSDK (1.8.7.1)
+  - WRNavigationBar (1.2.0)
+  - YTKNetwork (3.0.4):
+    - AFNetworking/NSURLSession (~> 4.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - IQKeyboardManager
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - RongCloudIM
+  - RongCloudRTC
+  - SDCycleScrollView
+  - SDWebImage
+  - SocketRocket
+  - WechatOpenSDK
+  - WRNavigationBar
+  - YTKNetwork
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - RongCloudIM
+    - RongCloudRTC
+    - SDCycleScrollView
+    - SDWebImage
+    - SocketRocket
+    - WechatOpenSDK
+    - WRNavigationBar
+    - YTKNetwork
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  RongCloudIM: 9cfc08d2f5744ff3c14ab3ccc1ff8bd74eb5e31a
+  RongCloudRTC: 2b0dcb6f6c0318e27dfbad8e55e5e32af27445d0
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
+  WRNavigationBar: dc952230effbb646785f962587caaac06c60f229
+  YTKNetwork: a096f80c18c7e7cc0e623a0fbea0a1bfd3f5bcf2
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: f257af1b062719ea6a09f050c9957b77616f287c
+
+COCOAPODS: 1.9.3

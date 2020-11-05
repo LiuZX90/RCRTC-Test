@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DoctorClient' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for DoctorClient
+
+	pod 'AFNetworking'
+	pod 'SDCycleScrollView'
+  pod 'WRNavigationBar'#,'~>1.2.0’
+  pod 'Masonry'
+	pod 'YTKNetwork'
+	pod 'MJExtension'
+	pod 'SDWebImage'
+	pod 'YYKit'
+	pod 'MBProgressHUD'
+	pod 'SocketRocket'
+	pod 'IQKeyboardManager'
+	pod 'MJRefresh'
+#	pod 'RongCloudRTC/RongCallLib'
+#  pod 'RongCloudRTC/RongCallKit'
+  pod 'RongCloudIM'#, '~> 2.10.6'
+  pod 'RongCloudRTC'#, '~> 2.10.6'
+#  pod 'RongRTCLib'#融云，视频会议，'~> 3.2.2'
+	pod 'WechatOpenSDK'
+#  pod 'GPUImage' #pod 下来的GPUImage 不完整..
+
+end

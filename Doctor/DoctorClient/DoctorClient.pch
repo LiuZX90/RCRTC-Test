@@ -1,0 +1,254 @@
+//
+//  DoctorClient.pch
+//  DoctorClient
+//
+//  Created by ZengPengYuan on 2019/4/22.
+//  Copyright © 2019 ZengPengYuan. All rights reserved.
+//
+
+#ifndef DoctorClient_pch
+#define DoctorClient_pch
+/**
+ *  tool
+ */
+//#import "Configuration.h"
+
+/**
+ *  Third framework
+ */
+#import <Masonry.h>
+#import <YTKNetwork.h>
+#import <MJExtension/MJExtension.h>
+#import <SDWebImage.h>
+#import <AFNetworking.h>
+#import <YYKit.h>
+#import <MJRefresh/MJRefresh.h>
+//#import <ByronSystemSDK/ByronSystemSDK.h>
+//#import "UIView+Corner.h"
+
+//Masonry 的扩展
+//#import "MASConstraintMaker+Forbearance.h"
+//#import "UIView+Forbearance.h"
+//#import "NSArray+Sudoku.h"
+
+//#import "PXDDefine.h"
+//#import "PXDCommonMethodTool.h"
+//#import "PXDTextInputView.h"
+//#import "PXDAlert.h"
+//#import "PXDCustomAlertVC.h"
+//#import "PXDImagesBrowser.h"
+//#import "PXDSelectHeaderView.h"
+//#import "PXDPageVCView.h"
+#import "FMNavBaseViewController.h"
+
+/**
+ *  category
+ */
+//#import "UIColor+String.h"
+//#import "UIView+Extension.h"
+//#import "NSString+Verification.h"
+//#import "UIButton+Extension.h"
+//#import "UIColor+HexValue.h"
+//#import "UIImage+Color.h"
+
+/**
+ *  network
+ */
+//#import "Url.h"
+/**
+ *  notification
+ */
+//#import "NotificationName.h"
+
+/**
+ *  hud
+ */
+//#import "HUDManager.h"
+/**
+ *  NetworkModel
+ */
+//#import "NetworkModel.h"
+
+//#import "NSDate+Timestamp.h"
+//#import "MyTool.h"
+#import <WRNavigationBar/WRNavigationBar.h>
+//#import "WRNavigationBar+platform.h"
+//#import "PublicModel.h"
+//#import "PublicRequest.h"
+//#import "NetWork.h"
+//#import "MessageModel.h"
+//#import "UserManager.h"
+//#import "ByronRongCloud.h"
+
+/*
+ *  融云
+ **/
+
+//#ifdef DEBUG
+//#define RongCloudAppKey @"c9kqb3rdc4wxj"
+//#define RongCloudAppSecret @"03IqqAMBJZ"
+//#else
+#define RongCloudAppKey @"6tnym1br6p7u7"
+#define RongCloudAppSecret @"xlW4NpIaRhYJr"
+//#endif
+
+/* 用户端
+#define WechatAppID @"wxa7adeb0c22a4bc88"
+ */
+#define WechatAppID @"wx27e351d8b994d6a1"
+// 用户端 wx375381b2400dc0b0
+// 医生端 wx6be1ffca5d7af21d
+// 一指通 wx27e351d8b994d6a1 f856040e6412769135078d54b8d6b5d0
+
+
+
+
+#endif /* DoctorClient_pch */
+
+#ifndef DLog
+    #define DLog(fmt, ...) NSLog((@"%s [Line %d] LLH...... " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#endif
+
+#define ToolURL @"https://api.yizhitong100.com/DOC/tool/tool.html?app=1"//工具箱的地址
+#define UniversalNetworkPrefixURL @"https://api.yizhitong100.com/"//通用请求前缀
+/**
+ *  屏幕宽高
+ */
+
+#define MainscreenWidth [UIScreen mainScreen].bounds.size.width
+#define MainscreenHeight [UIScreen mainScreen].bounds.size.height
+#define STATUSBAR_HEIGHT  ([UIApplication sharedApplication].statusBarFrame.size.height) //状态栏高度
+
+#define kIs_iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define kIs_iPhoneX kScreenWidth >=375.0f && kScreenHeight >=812.0f&& kIs_iphone
+ 
+/*状态栏高度*/
+#define kStatusBarHeight (CGFloat)(kIs_iPhoneX?(44.0):(20.0))
+/*导航栏高度*/
+#define kNavBarHeight (44)
+/*状态栏和导航栏总高度*/
+#define kNavBarAndStatusBarHeight (CGFloat)(kIs_iPhoneX?(88.0):(64.0))
+/*TabBar高度*/
+#define kTabBarHeight (CGFloat)(kIs_iPhoneX?(49.0 + 34.0):(49.0))
+/*顶部安全区域远离高度*/
+#define kTopBarSafeHeight (CGFloat)(kIs_iPhoneX?(44.0):(0))
+/*底部安全区域远离高度*/
+#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX?(34.0):(0))
+/*iPhoneX的状态栏高度差值*/
+#define kTopBarDifHeight (CGFloat)(kIs_iPhoneX?(24.0):(0))
+/*导航条和Tabbar总高度*/
+#define kNavAndTabHeight (kNavBarAndStatusBarHeight + kTabBarHeight)
+
+// RGB颜色
+#define SPColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define RandomColor             [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1]
+/********   快速三原色定制颜色   *********/
+#define RGBA(r, g, b,a)         [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:a]
+
+#define BACK_Color RGBA(239,238,244,1)
+
+//灰色
+#define GRAY RGBA(154,154,154,1)
+
+//蓝色
+#define BLUE RGBA(20,118,215,1)
+
+//字体->黑色
+#define TITLE_Black RGBA(102,102,102,1)
+
+#define popColor [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:1.0]
+
+#define CCYWeakSelf __weak typeof(self) weakSelf = self
+
+#define personalPageMainColor [UIColor colorWithHexString:@"#724ba6"]
+
+#define ADAPTER kScreenWidth/320
+
+
+
+// RongRTC ================================================================
+#define kDeviceUUID [[[[UIDevice currentDevice] identifierForVendor] UUIDString] substringToIndex:4]
+
+//AppKey请到官网获取
+#define RCIMAPPKey @"6tnym1br6p7u7"
+//SECRET请到官网获取
+#define RCIM_API_SECRET @"xlW4NpIaRhYJr"
+#define RCIMNavURL @"nav.cn.ronghub.com"
+//请自行搭建Demo Server, 此Server用于获取Toekn
+#define RCDEMOServerURL @"https://api-cn.ronghub.com"
+#define RCIM_API_SERVER @"https://api-cn.ronghub.com"
+#define RCIMFileURL @"img.cn.ronghub.com"
+//直播Demo Server, 请自行搭建
+#define RCLiveURL @""
+
+#define MAX_NORMAL_PERSONS 9
+#define MAX_AUDIO_PERSONS 30
+
+#define ENABLE_MANUAL_MEDIASERVER false
+
+#define kEverLaunched @"everLaunched"
+#define kDefaultRoomNumber @"DefaultRoomNumber"
+#define kDefaultUserName @"kDefaultUserName"
+#define kDefaultUserID @"kDefaultUserID"
+#define RegexRoomID @"^[A-Za-z0-9+=\\-_]+$"
+#define RegexIsChinese @"^[\u4e00-\u9fa5]+$"
+
+#define ButtonDistance  ([UIScreen mainScreen].bounds.size.height>[UIScreen mainScreen].bounds.size.width ? ([UIScreen mainScreen].bounds.size.width/2 - 30.0 - 44.0):100.0)
+
+#define File_SettingUserDefaults_Plist @"settingUserDefaults.plist"
+#define Key_ResolutionRatio @"ResolutionRatio"
+#define Dynamic_resolution @"Dynamic_resolution"
+#define Key_FrameRate @"FrameRate"
+#define Key_CodeRate @"CodeRate"
+#define Key_MaxCodeRate @"MaxCodeRate"
+#define Key_MinCodeRate @"MinCodeRate"
+#define Key_CodingStyle @"CodingStyle"
+#define Key_GPUFilter @"GPUFilter"
+#define Key_WaterMark @"WaterMark"
+#define Key_SRTPEncrypt @"SRTPEncrypt"
+#define Key_AudioScenarioMusic @"AudioScenarioMusic"
+#define Key_VideoMirror @"VideoMirror"
+#define Key_AutoTest @"AutoTest"
+#define Key_PhoneNumber @"PhoneNumber"
+#define Key_KeyToken @"KeyToken"
+#define Key_TinyStreamMode @"TinyStream"
+#define Key_CountryCode @"countryCode"
+#define Key_RegionName @"regionName"
+#define Key_MediaServerURL @"mediaServerURL"
+#define Key_MediaServerRow @"mediaServerRow"
+#define Key_MediaServerArray @"mediaServerList"
+
+#define Key_IsHost @"isHost"
+
+#define Key_KickOffTime @"kickOffTime"
+#define Key_KickOffRoomNumber @"kickOffRoomNumber"
+#define Key_IsKickOff @"isKickOff"
+
+#define Key_IsOpenAudioCrypto @"isOpenAudioCrypto"
+#define Key_IsOpenVideoCrypto @"isOpenVideoCrypto"
+
+#define Value_Default_ResolutionRatio 8
+#define Value_Default_FrameRate 1
+#define Value_Default_MaxCodeRate 45
+#define Value_Default_Coding_Style 0
+#define Value_Default_MinCodeRate 6
+#define Value_Default_GPUFilter NO
+#define Value_Default_SRTPEncrypt NO
+#define Value_Default_AudioScenarioMusic NO
+#define Value_Default_QuicMode NO
+#define Value_Default_TinyStream YES
+#define Value_Default_WaterMark NO
+#define Value_Default_AutoTest NO
+#define Value_Default_MediaServerRow 0
+#define IS_DEFAULT_CHATWIEW YES
+#define Key_Force_Close_Log NO
+#define IS_NOT_PRIVATE_ENVIRONMENT
+#define IS_NOT_LIVE
+#define IS_NOT_CRYPTO
+
+#ifdef DEBUG
+    #define APP_Version [NSString stringWithFormat:@"%@ V%@_Debug",NSLocalizedString(@"RongCloud_Meeting", nil), [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]]
+#else
+    #define APP_Version [NSString stringWithFormat:@"%@ V%@",NSLocalizedString(@"RongCloud_Meeting", nil), [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]]
+#endif

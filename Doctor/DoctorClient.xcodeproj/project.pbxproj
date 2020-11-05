@@ -1,0 +1,1757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048030E922D58DBF00E7A257 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048030E822D58DBF00E7A257 /* PushKit.framework */; };
+		3918EE04226D67FB004676C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3918EE03226D67FB004676C7 /* Assets.xcassets */; };
+		3918EE0A226D67FB004676C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3918EE09226D67FB004676C7 /* main.m */; };
+		3918EE1C226D712B004676C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3918EE1B226D712B004676C7 /* AppDelegate.m */; };
+		3918EE2D226D89E3004676C7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3918EE2C226D89E3004676C7 /* HomeViewController.m */; };
+		3918EE35226D8A4D004676C7 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3918EE34226D8A4D004676C7 /* MineViewController.m */; };
+		4483E2DB23A7338C00D7C020 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4483E2CF23A7338B00D7C020 /* WMPageController.m */; };
+		4483E2DC23A7338C00D7C020 /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4483E2D623A7338B00D7C020 /* WMMenuItem.m */; };
+		4483E2DD23A7338C00D7C020 /* WMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4483E2D723A7338B00D7C020 /* WMScrollView.m */; };
+		4483E2DE23A7338C00D7C020 /* WMMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4483E2D823A7338C00D7C020 /* WMMenuView.m */; };
+		4483E2DF23A7338C00D7C020 /* WMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4483E2D923A7338C00D7C020 /* WMProgressView.m */; };
+		506B9F2FD9B60B1AE7B09834 /* Pods_DoctorClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A6204FCC4645FFA8D8A94D /* Pods_DoctorClient.framework */; };
+		945D157F2521C55D0045D23B /* PXDBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945D157E2521C55D0045D23B /* PXDBaseTableViewController.m */; };
+		946273AA253D982B0068494D /* sound.gif in Resources */ = {isa = PBXBuildFile; fileRef = 946273A9253D982B0068494D /* sound.gif */; };
+		947020C5251D944E00DC89F4 /* UINavigationBar+handle.m in Sources */ = {isa = PBXBuildFile; fileRef = 947020BF251D944C00DC89F4 /* UINavigationBar+handle.m */; };
+		947020C6251D944E00DC89F4 /* FMNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 947020C1251D944D00DC89F4 /* FMNavigationBar.m */; };
+		947020C7251D944E00DC89F4 /* FMNavBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947020C2251D944D00DC89F4 /* FMNavBaseViewController.m */; };
+		947020CB251D945A00DC89F4 /* FMBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947020CA251D945A00DC89F4 /* FMBaseScrollViewController.m */; };
+		947020D8251D96F700DC89F4 /* PXDTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 947020D7251D96F700DC89F4 /* PXDTabbarController.m */; };
+		9474404E25501082005C2C58 /* FrameRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94743F1B25501081005C2C58 /* FrameRate.plist */; };
+		9474404F25501082005C2C58 /* Dynamic_resolution.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94743F1C25501081005C2C58 /* Dynamic_resolution.plist */; };
+		9474405025501082005C2C58 /* CodeRate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94743F1D25501081005C2C58 /* CodeRate.plist */; };
+		9474405125501082005C2C58 /* ResolutionRatio.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94743F1E25501081005C2C58 /* ResolutionRatio.plist */; };
+		9474405225501082005C2C58 /* CodingStyle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94743F1F25501081005C2C58 /* CodingStyle.plist */; };
+		9474405325501082005C2C58 /* STParticipantsTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2325501081005C2C58 /* STParticipantsTableViewHeader.m */; };
+		9474405425501082005C2C58 /* STKickOffInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2425501081005C2C58 /* STKickOffInfoMessage.m */; };
+		9474405525501082005C2C58 /* STParticipantsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2525501081005C2C58 /* STParticipantsInfo.m */; };
+		9474405625501082005C2C58 /* STJSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2625501081005C2C58 /* STJSONModel.m */; };
+		9474405725501082005C2C58 /* STPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2725501081005C2C58 /* STPresentationViewController.m */; };
+		9474405825501082005C2C58 /* STSetRoomInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2825501081005C2C58 /* STSetRoomInfoMessage.m */; };
+		9474405925501082005C2C58 /* STParticipantsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2925501081005C2C58 /* STParticipantsTableViewController.m */; };
+		9474405A25501082005C2C58 /* STDeleteRoomInfoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F2A25501081005C2C58 /* STDeleteRoomInfoMessage.m */; };
+		9474405B25501082005C2C58 /* UIColor+ColorChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F3225501081005C2C58 /* UIColor+ColorChange.m */; };
+		9474405C25501082005C2C58 /* UICollectionView+RongRTCBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F3725501081005C2C58 /* UICollectionView+RongRTCBgView.m */; };
+		9474405D25501082005C2C58 /* UINavigationController+returnBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F3925501081005C2C58 /* UINavigationController+returnBack.m */; };
+		9474405E25501082005C2C58 /* NSString+length.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F3A25501081005C2C58 /* NSString+length.m */; };
+		9474405F25501082005C2C58 /* UIScrollView+Responder.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F3B25501081005C2C58 /* UIScrollView+Responder.m */; };
+		9474406025501082005C2C58 /* ChatMembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F3D25501081005C2C58 /* ChatMembersViewController.m */; };
+		9474406125501082005C2C58 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4125501081005C2C58 /* ChatViewController.m */; };
+		9474406225501082005C2C58 /* ChatCollectionViewDataSourceDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4525501081005C2C58 /* ChatCollectionViewDataSourceDelegateImpl.m */; };
+		9474406325501082005C2C58 /* ChatRongVideoRTCDecryptorDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4625501081005C2C58 /* ChatRongVideoRTCDecryptorDelegateImpl.m */; };
+		9474406425501082005C2C58 /* ChatRongAudioRTCEncryptorDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4725501081005C2C58 /* ChatRongAudioRTCEncryptorDelegateImpl.m */; };
+		9474406525501082005C2C58 /* ChatBubbleMenuViewDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4825501081005C2C58 /* ChatBubbleMenuViewDelegateImpl.m */; };
+		9474406625501082005C2C58 /* ChatRongRTCNetworkMonitorDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4925501081005C2C58 /* ChatRongRTCNetworkMonitorDelegateImpl.m */; };
+		9474406725501082005C2C58 /* ChatRongRTCRoomDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4A25501081005C2C58 /* ChatRongRTCRoomDelegateImpl.m */; };
+		9474406825501082005C2C58 /* ChatRongVideoRTCEncryptorDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4B25501081005C2C58 /* ChatRongVideoRTCEncryptorDelegateImpl.m */; };
+		9474406925501082005C2C58 /* ChatRongAudioRTCDecryptorDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F4C25501081005C2C58 /* ChatRongAudioRTCDecryptorDelegateImpl.m */; };
+		9474406A25501082005C2C58 /* ChatMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94743F5525501081005C2C58 /* ChatMemberCell.xib */; };
+		9474406B25501082005C2C58 /* ChatMemberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F5625501081005C2C58 /* ChatMemberCell.m */; };
+		9474406C25501082005C2C58 /* ChatViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F5825501081005C2C58 /* ChatViewBuilder.m */; };
+		9474406D25501082005C2C58 /* ChatWhiteBoardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F5925501081005C2C58 /* ChatWhiteBoardHandler.m */; };
+		9474406E25501082005C2C58 /* ChatGPUImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F5A25501081005C2C58 /* ChatGPUImageHandler.m */; };
+		9474406F25501082005C2C58 /* ChatCellVideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F5D25501081005C2C58 /* ChatCellVideoViewModel.m */; };
+		9474407025501082005C2C58 /* ChatLocalDataInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F6025501081005C2C58 /* ChatLocalDataInfoModel.m */; };
+		9474407125501082005C2C58 /* ChatDataInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F6125501081005C2C58 /* ChatDataInfoModel.m */; };
+		9474407225501082005C2C58 /* my_homeland.aac in Resources */ = {isa = PBXBuildFile; fileRef = 94743F6525501081005C2C58 /* my_homeland.aac */; };
+		9474407325501082005C2C58 /* video_demo1_low.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 94743F6925501081005C2C58 /* video_demo1_low.mp4 */; };
+		9474407425501082005C2C58 /* voip_network_error_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 94743F6A25501081005C2C58 /* voip_network_error_sound.wav */; };
+		9474407525501082005C2C58 /* RongRTCGPUPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F6B25501081005C2C58 /* RongRTCGPUPreviewView.m */; };
+		9474407625501082005C2C58 /* RTActiveWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F6C25501081005C2C58 /* RTActiveWheel.m */; };
+		9474407725501082005C2C58 /* video_demo2_low.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 94743F6D25501081005C2C58 /* video_demo2_low.mp4 */; };
+		9474407825501082005C2C58 /* RongAudioVolumeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F6E25501081005C2C58 /* RongAudioVolumeControl.m */; };
+		9474407925501082005C2C58 /* RCRTCFileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F6F25501081005C2C58 /* RCRTCFileSource.m */; };
+		9474407A25501082005C2C58 /* ChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F7025501081005C2C58 /* ChatManager.m */; };
+		9474407B25501082005C2C58 /* STAudioMixerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F7525501081005C2C58 /* STAudioMixerConfiguration.m */; };
+		9474407C25501082005C2C58 /* STAudioModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F7625501081005C2C58 /* STAudioModeViewController.m */; };
+		9474407D25501082005C2C58 /* STAudioMixingPannelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F7725501081005C2C58 /* STAudioMixingPannelController.m */; };
+		9474407E25501082005C2C58 /* UIViews+Localized.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F7825501081005C2C58 /* UIViews+Localized.m */; };
+		9474407F25501082005C2C58 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94743F7C25501081005C2C58 /* GPUImage.framework */; };
+		9474408025501082005C2C58 /* GPUImageOutputCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F8025501081005C2C58 /* GPUImageOutputCamera.m */; };
+		9474408125501082005C2C58 /* GPUImageBeautyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F8125501082005C2C58 /* GPUImageBeautyFilter.m */; };
+		9474408225501082005C2C58 /* WhiteRoomState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F8625501082005C2C58 /* WhiteRoomState.m */; };
+		9474408325501082005C2C58 /* WhiteBroadcastState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F8825501082005C2C58 /* WhiteBroadcastState.m */; };
+		9474408425501082005C2C58 /* WhiteRoomCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F8F25501082005C2C58 /* WhiteRoomCallbacks.m */; };
+		9474408525501082005C2C58 /* WhiteImageInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F9225501082005C2C58 /* WhiteImageInformation.m */; };
+		9474408625501082005C2C58 /* WhiteRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F9325501082005C2C58 /* WhiteRoom.m */; };
+		9474408725501082005C2C58 /* WhiteSDK+Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F9425501082005C2C58 /* WhiteSDK+Room.m */; };
+		9474408825501082005C2C58 /* WhiteRoomConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F9525501082005C2C58 /* WhiteRoomConfig.m */; };
+		9474408925501082005C2C58 /* WhiteConversionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F9825501082005C2C58 /* WhiteConversionInfo.m */; };
+		9474408A25501082005C2C58 /* WhiteConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F9925501082005C2C58 /* WhiteConverter.m */; };
+		9474408B25501082005C2C58 /* WhiteOriginPrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743F9C25501082005C2C58 /* WhiteOriginPrefetcher.m */; };
+		9474408C25501082005C2C58 /* WhiteCommonCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FA425501082005C2C58 /* WhiteCommonCallbacks.m */; };
+		9474408D25501082005C2C58 /* WhiteDisplayerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FA725501082005C2C58 /* WhiteDisplayerState.m */; };
+		9474408E25501082005C2C58 /* WhiteWebViewInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FA825501082005C2C58 /* WhiteWebViewInjection.m */; };
+		9474408F25501082005C2C58 /* WhiteDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FA925501082005C2C58 /* WhiteDisplayer.m */; };
+		9474409025501082005C2C58 /* WhiteGlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FAA25501082005C2C58 /* WhiteGlobalState.m */; };
+		9474409125501082005C2C58 /* WhiteBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FAC25501082005C2C58 /* WhiteBoardView.m */; };
+		9474409225501082005C2C58 /* WhitePlayerEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FB025501082005C2C58 /* WhitePlayerEvent.m */; };
+		9474409325501082005C2C58 /* WhiteSDK+Replayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FB125501082005C2C58 /* WhiteSDK+Replayer.m */; };
+		9474409425501082005C2C58 /* WhitePlayerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FB325501082005C2C58 /* WhitePlayerConfig.m */; };
+		9474409525501082005C2C58 /* WhitePlayerTimeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FB725501082005C2C58 /* WhitePlayerTimeInfo.m */; };
+		9474409625501082005C2C58 /* WhitePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FBA25501082005C2C58 /* WhitePlayer.m */; };
+		9474409725501082005C2C58 /* WhitePlayerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FBB25501082005C2C58 /* WhitePlayerState.m */; };
+		9474409825501082005C2C58 /* WhiteScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FBE25501082005C2C58 /* WhiteScene.m */; };
+		9474409925501082005C2C58 /* WhiteRoomMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FBF25501082005C2C58 /* WhiteRoomMember.m */; };
+		9474409A25501082005C2C58 /* WhiteConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FC025501082005C2C58 /* WhiteConsts.m */; };
+		9474409B25501082005C2C58 /* WhiteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FC125501082005C2C58 /* WhiteObject.m */; };
+		9474409C25501082005C2C58 /* WhitePptPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FC325501082005C2C58 /* WhitePptPage.m */; };
+		9474409D25501082005C2C58 /* WhiteSceneState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FC425501082005C2C58 /* WhiteSceneState.m */; };
+		9474409E25501082005C2C58 /* WhiteMemberState.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FC625501082005C2C58 /* WhiteMemberState.m */; };
+		9474409F25501082005C2C58 /* WhitePanEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FC825501082005C2C58 /* WhitePanEvent.m */; };
+		947440A025501082005C2C58 /* WhiteRectangleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FCA25501082005C2C58 /* WhiteRectangleConfig.m */; };
+		947440A125501082005C2C58 /* WhiteCameraBound.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FCB25501082005C2C58 /* WhiteCameraBound.m */; };
+		947440A225501082005C2C58 /* WhiteMemberInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FD025501082005C2C58 /* WhiteMemberInformation.m */; };
+		947440A325501082005C2C58 /* WhiteCameraConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FD225501082005C2C58 /* WhiteCameraConfig.m */; };
+		947440A425501082005C2C58 /* WhiteEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FD525501082005C2C58 /* WhiteEvent.m */; };
+		947440A525501082005C2C58 /* WhiteSdkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FD925501082005C2C58 /* WhiteSdkConfiguration.m */; };
+		947440A625501082005C2C58 /* WhiteSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FDA25501082005C2C58 /* WhiteSDK.m */; };
+		947440A725501082005C2C58 /* WhiteVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FE025501082005C2C58 /* WhiteVideoView.m */; };
+		947440A825501082005C2C58 /* WhiteCombinePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FE125501082005C2C58 /* WhiteCombinePlayer.m */; };
+		947440A925501082005C2C58 /* WhiteSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FE225501082005C2C58 /* WhiteSliderView.m */; };
+		947440AA25501082005C2C58 /* Whiteboard.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 94743FE725501082005C2C58 /* Whiteboard.bundle */; };
+		947440AB25501082005C2C58 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94743FE825501082005C2C58 /* libopencore-amrwb.a */; };
+		947440AC25501082005C2C58 /* DSCallInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FEC25501082005C2C58 /* DSCallInfo.m */; };
+		947440AD25501082005C2C58 /* InternalApis.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FF025501082005C2C58 /* InternalApis.m */; };
+		947440AE25501082005C2C58 /* JSBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FF125501082005C2C58 /* JSBUtil.m */; };
+		947440AF25501082005C2C58 /* DWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FF225501082005C2C58 /* DWKWebView.m */; };
+		947440B025501082005C2C58 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94743FF325501082005C2C58 /* libopencore-amrnb.a */; };
+		947440B125501082005C2C58 /* libvo-amrwbenc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94743FF425501082005C2C58 /* libvo-amrwbenc.a */; };
+		947440B225501082005C2C58 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FF625501082005C2C58 /* Reachability.m */; };
+		947440B325501082005C2C58 /* ColorSelectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FF925501082005C2C58 /* ColorSelectionCollectionViewController.m */; };
+		947440B425501082005C2C58 /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FFA25501082005C2C58 /* DWBubbleMenuButton.m */; };
+		947440B525501082005C2C58 /* BlinkExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FFD25501082005C2C58 /* BlinkExcelView.m */; };
+		947440B625501082005C2C58 /* SXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94743FFF25501082005C2C58 /* SXAlertView.m */; };
+		947440B725501082005C2C58 /* RadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474400125501082005C2C58 /* RadioButton.m */; };
+		947440B825501082005C2C58 /* YHExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474400425501082005C2C58 /* YHExcelView.m */; };
+		947440B925501082005C2C58 /* YHExcelViewIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474400725501082005C2C58 /* YHExcelViewIndexPath.m */; };
+		947440BA25501082005C2C58 /* YHExcelTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474400825501082005C2C58 /* YHExcelTitleView.m */; };
+		947440BB25501082005C2C58 /* YHExcelViewColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474400925501082005C2C58 /* YHExcelViewColumn.m */; };
+		947440BC25501082005C2C58 /* UIView+YHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474400A25501082005C2C58 /* UIView+YHCategory.m */; };
+		947440BD25501082005C2C58 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474400F25501082005C2C58 /* ChatCell.m */; };
+		947440BE25501082005C2C58 /* WhiteBoardWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474401025501082005C2C58 /* WhiteBoardWebView.m */; };
+		947440BF25501082005C2C58 /* ChatAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474401425501082005C2C58 /* ChatAvatarView.m */; };
+		947440C025501082005C2C58 /* ZHPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474401625501082005C2C58 /* ZHPickView.m */; };
+		947440C125501082005C2C58 /* MessageStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474401725501082005C2C58 /* MessageStatusBar.m */; };
+		947440C225501082005C2C58 /* RongWhiteBoardMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474401A25501082005C2C58 /* RongWhiteBoardMessage.m */; };
+		947440C325501082005C2C58 /* RCRTCVideoCaptureParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474401D25501082005C2C58 /* RCRTCVideoCaptureParam.m */; };
+		947440C425501082005C2C58 /* PrivateCloudSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474402025501082005C2C58 /* PrivateCloudSettingViewController.m */; };
+		947440C525501082005C2C58 /* PrivateSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474402125501082005C2C58 /* PrivateSettingCell.m */; };
+		947440C625501082005C2C58 /* PrivateSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9474402225501082005C2C58 /* PrivateSettingCell.xib */; };
+		947440C725501082005C2C58 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474402625501082005C2C58 /* UIView+Toast.m */; };
+		947440C825501082005C2C58 /* SettingTextFieldDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474402A25501082005C2C58 /* SettingTextFieldDelegateImpl.m */; };
+		947440C925501082005C2C58 /* SettingPickViewDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474402E25501082005C2C58 /* SettingPickViewDelegateImpl.m */; };
+		947440CA25501082005C2C58 /* SettingTableViewDelegateSourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474402F25501082005C2C58 /* SettingTableViewDelegateSourceImpl.m */; };
+		947440CB25501082005C2C58 /* SettingViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403025501082005C2C58 /* SettingViewBuilder.m */; };
+		947440CC25501082005C2C58 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403225501082005C2C58 /* SettingViewController.m */; };
+		947440CD25501082005C2C58 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403425501082005C2C58 /* LoginManager.m */; };
+		947440CE25501082005C2C58 /* RTCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403525501082005C2C58 /* RTCLoginViewController.m */; };
+		947440CF25501082005C2C58 /* RCSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403625501082005C2C58 /* RCSelectView.m */; };
+		947440D025501082005C2C58 /* LoginViewBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403925501082005C2C58 /* LoginViewBuilder.m */; };
+		947440D125501082005C2C58 /* LoginTextFieldDelegateImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403C25501082005C2C58 /* LoginTextFieldDelegateImpl.m */; };
+		947440D225501082005C2C58 /* RCBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474403F25501082005C2C58 /* RCBackView.m */; };
+		947440D325501082005C2C58 /* RCSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474404225501082005C2C58 /* RCSelectModel.m */; };
+		947440D425501082005C2C58 /* CommonUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474404725501082005C2C58 /* CommonUtility.m */; };
+		947440D525501082005C2C58 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474404925501082005C2C58 /* UIColor+Helper.m */; };
+		947440D625501082005C2C58 /* RTHttpNetworkWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474404A25501082005C2C58 /* RTHttpNetworkWorker.m */; };
+		947440D725501082005C2C58 /* RCFetchTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474404B25501082005C2C58 /* RCFetchTokenManager.m */; };
+		947440D825501082005C2C58 /* WhiteUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9474404C25501082005C2C58 /* WhiteUtils.m */; };
+		94B0E054252189F2006E081A /* PXDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B0E053252189F2006E081A /* PXDBaseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00A6204FCC4645FFA8D8A94D /* Pods_DoctorClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoctorClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		048030E822D58DBF00E7A257 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		08232AE9584FFCB5CD697E62 /* Pods-DoctorClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorClient.debug.xcconfig"; path = "Target Support Files/Pods-DoctorClient/Pods-DoctorClient.debug.xcconfig"; sourceTree = "<group>"; };
+		3918EDF7226D67F9004676C7 /* DC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3918EE03226D67FB004676C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3918EE08226D67FB004676C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3918EE09226D67FB004676C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3918EE1A226D712B004676C7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3918EE1B226D712B004676C7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3918EE21226D7220004676C7 /* DoctorClient.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoctorClient.pch; sourceTree = "<group>"; };
+		3918EE2B226D89E3004676C7 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		3918EE2C226D89E3004676C7 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3918EE33226D8A4D004676C7 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		3918EE34226D8A4D004676C7 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		4483E2CF23A7338B00D7C020 /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
+		4483E2D023A7338B00D7C020 /* WMPageConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPageConst.h; sourceTree = "<group>"; };
+		4483E2D223A7338B00D7C020 /* WMScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMScrollView.h; sourceTree = "<group>"; };
+		4483E2D323A7338B00D7C020 /* WMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuItem.h; sourceTree = "<group>"; };
+		4483E2D423A7338B00D7C020 /* WMMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuView.h; sourceTree = "<group>"; };
+		4483E2D523A7338B00D7C020 /* WMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMProgressView.h; sourceTree = "<group>"; };
+		4483E2D623A7338B00D7C020 /* WMMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuItem.m; sourceTree = "<group>"; };
+		4483E2D723A7338B00D7C020 /* WMScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMScrollView.m; sourceTree = "<group>"; };
+		4483E2D823A7338C00D7C020 /* WMMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuView.m; sourceTree = "<group>"; };
+		4483E2D923A7338C00D7C020 /* WMProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMProgressView.m; sourceTree = "<group>"; };
+		4483E2DA23A7338C00D7C020 /* WMPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPageController.h; sourceTree = "<group>"; };
+		6F7552730E89B3C4AF5B315F /* Pods-DoctorClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoctorClient.release.xcconfig"; path = "Target Support Files/Pods-DoctorClient/Pods-DoctorClient.release.xcconfig"; sourceTree = "<group>"; };
+		945D157D2521C55D0045D23B /* PXDBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXDBaseTableViewController.h; sourceTree = "<group>"; };
+		945D157E2521C55D0045D23B /* PXDBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXDBaseTableViewController.m; sourceTree = "<group>"; };
+		946273A9253D982B0068494D /* sound.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sound.gif; sourceTree = "<group>"; };
+		947020BF251D944C00DC89F4 /* UINavigationBar+handle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+handle.m"; sourceTree = "<group>"; };
+		947020C0251D944D00DC89F4 /* FMNavBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNavBaseViewController.h; sourceTree = "<group>"; };
+		947020C1251D944D00DC89F4 /* FMNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNavigationBar.m; sourceTree = "<group>"; };
+		947020C2251D944D00DC89F4 /* FMNavBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNavBaseViewController.m; sourceTree = "<group>"; };
+		947020C3251D944D00DC89F4 /* FMNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNavigationBar.h; sourceTree = "<group>"; };
+		947020C4251D944E00DC89F4 /* UINavigationBar+handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+handle.h"; sourceTree = "<group>"; };
+		947020C9251D945900DC89F4 /* FMBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMBaseScrollViewController.h; sourceTree = "<group>"; };
+		947020CA251D945A00DC89F4 /* FMBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMBaseScrollViewController.m; sourceTree = "<group>"; };
+		947020D6251D96F700DC89F4 /* PXDTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXDTabbarController.h; sourceTree = "<group>"; };
+		947020D7251D96F700DC89F4 /* PXDTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXDTabbarController.m; sourceTree = "<group>"; };
+		94743F1B25501081005C2C58 /* FrameRate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FrameRate.plist; sourceTree = "<group>"; };
+		94743F1C25501081005C2C58 /* Dynamic_resolution.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dynamic_resolution.plist; sourceTree = "<group>"; };
+		94743F1D25501081005C2C58 /* CodeRate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CodeRate.plist; sourceTree = "<group>"; };
+		94743F1E25501081005C2C58 /* ResolutionRatio.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ResolutionRatio.plist; sourceTree = "<group>"; };
+		94743F1F25501081005C2C58 /* CodingStyle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CodingStyle.plist; sourceTree = "<group>"; };
+		94743F2125501081005C2C58 /* STDeleteRoomInfoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDeleteRoomInfoMessage.h; sourceTree = "<group>"; };
+		94743F2225501081005C2C58 /* STParticipantsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STParticipantsTableViewController.h; sourceTree = "<group>"; };
+		94743F2325501081005C2C58 /* STParticipantsTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STParticipantsTableViewHeader.m; sourceTree = "<group>"; };
+		94743F2425501081005C2C58 /* STKickOffInfoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKickOffInfoMessage.m; sourceTree = "<group>"; };
+		94743F2525501081005C2C58 /* STParticipantsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STParticipantsInfo.m; sourceTree = "<group>"; };
+		94743F2625501081005C2C58 /* STJSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STJSONModel.m; sourceTree = "<group>"; };
+		94743F2725501081005C2C58 /* STPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPresentationViewController.m; sourceTree = "<group>"; };
+		94743F2825501081005C2C58 /* STSetRoomInfoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSetRoomInfoMessage.m; sourceTree = "<group>"; };
+		94743F2925501081005C2C58 /* STParticipantsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STParticipantsTableViewController.m; sourceTree = "<group>"; };
+		94743F2A25501081005C2C58 /* STDeleteRoomInfoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDeleteRoomInfoMessage.m; sourceTree = "<group>"; };
+		94743F2B25501081005C2C58 /* STKickOffInfoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKickOffInfoMessage.h; sourceTree = "<group>"; };
+		94743F2C25501081005C2C58 /* STParticipantsTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STParticipantsTableViewHeader.h; sourceTree = "<group>"; };
+		94743F2D25501081005C2C58 /* STJSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STJSONModel.h; sourceTree = "<group>"; };
+		94743F2E25501081005C2C58 /* STParticipantsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STParticipantsInfo.h; sourceTree = "<group>"; };
+		94743F2F25501081005C2C58 /* STSetRoomInfoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSetRoomInfoMessage.h; sourceTree = "<group>"; };
+		94743F3025501081005C2C58 /* STPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPresentationViewController.h; sourceTree = "<group>"; };
+		94743F3225501081005C2C58 /* UIColor+ColorChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorChange.m"; sourceTree = "<group>"; };
+		94743F3325501081005C2C58 /* UICollectionView+RongRTCBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+RongRTCBgView.h"; sourceTree = "<group>"; };
+		94743F3425501081005C2C58 /* NSString+length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+length.h"; sourceTree = "<group>"; };
+		94743F3525501081005C2C58 /* UINavigationController+returnBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+returnBack.h"; sourceTree = "<group>"; };
+		94743F3625501081005C2C58 /* UIScrollView+Responder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Responder.h"; sourceTree = "<group>"; };
+		94743F3725501081005C2C58 /* UICollectionView+RongRTCBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+RongRTCBgView.m"; sourceTree = "<group>"; };
+		94743F3825501081005C2C58 /* UIColor+ColorChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorChange.h"; sourceTree = "<group>"; };
+		94743F3925501081005C2C58 /* UINavigationController+returnBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+returnBack.m"; sourceTree = "<group>"; };
+		94743F3A25501081005C2C58 /* NSString+length.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+length.m"; sourceTree = "<group>"; };
+		94743F3B25501081005C2C58 /* UIScrollView+Responder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Responder.m"; sourceTree = "<group>"; };
+		94743F3D25501081005C2C58 /* ChatMembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMembersViewController.m; sourceTree = "<group>"; };
+		94743F3E25501081005C2C58 /* ChatGPUImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatGPUImageHandler.h; sourceTree = "<group>"; };
+		94743F3F25501081005C2C58 /* ChatWhiteBoardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWhiteBoardHandler.h; sourceTree = "<group>"; };
+		94743F4025501081005C2C58 /* ChatViewBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewBuilder.h; sourceTree = "<group>"; };
+		94743F4125501081005C2C58 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		94743F4325501081005C2C58 /* ChatRongVideoRTCEncryptorDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRongVideoRTCEncryptorDelegateImpl.h; sourceTree = "<group>"; };
+		94743F4425501081005C2C58 /* ChatRongAudioRTCDecryptorDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRongAudioRTCDecryptorDelegateImpl.h; sourceTree = "<group>"; };
+		94743F4525501081005C2C58 /* ChatCollectionViewDataSourceDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCollectionViewDataSourceDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4625501081005C2C58 /* ChatRongVideoRTCDecryptorDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRongVideoRTCDecryptorDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4725501081005C2C58 /* ChatRongAudioRTCEncryptorDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRongAudioRTCEncryptorDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4825501081005C2C58 /* ChatBubbleMenuViewDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBubbleMenuViewDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4925501081005C2C58 /* ChatRongRTCNetworkMonitorDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRongRTCNetworkMonitorDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4A25501081005C2C58 /* ChatRongRTCRoomDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRongRTCRoomDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4B25501081005C2C58 /* ChatRongVideoRTCEncryptorDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRongVideoRTCEncryptorDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4C25501081005C2C58 /* ChatRongAudioRTCDecryptorDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRongAudioRTCDecryptorDelegateImpl.m; sourceTree = "<group>"; };
+		94743F4D25501081005C2C58 /* ChatRongVideoRTCDecryptorDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRongVideoRTCDecryptorDelegateImpl.h; sourceTree = "<group>"; };
+		94743F4E25501081005C2C58 /* ChatCollectionViewDataSourceDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCollectionViewDataSourceDelegateImpl.h; sourceTree = "<group>"; };
+		94743F4F25501081005C2C58 /* ChatRongRTCRoomDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRongRTCRoomDelegateImpl.h; sourceTree = "<group>"; };
+		94743F5025501081005C2C58 /* ChatRongRTCNetworkMonitorDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRongRTCNetworkMonitorDelegateImpl.h; sourceTree = "<group>"; };
+		94743F5125501081005C2C58 /* ChatBubbleMenuViewDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBubbleMenuViewDelegateImpl.h; sourceTree = "<group>"; };
+		94743F5225501081005C2C58 /* ChatRongAudioRTCEncryptorDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRongAudioRTCEncryptorDelegateImpl.h; sourceTree = "<group>"; };
+		94743F5325501081005C2C58 /* ChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatManager.h; sourceTree = "<group>"; };
+		94743F5525501081005C2C58 /* ChatMemberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatMemberCell.xib; sourceTree = "<group>"; };
+		94743F5625501081005C2C58 /* ChatMemberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMemberCell.m; sourceTree = "<group>"; };
+		94743F5725501081005C2C58 /* ChatMemberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMemberCell.h; sourceTree = "<group>"; };
+		94743F5825501081005C2C58 /* ChatViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewBuilder.m; sourceTree = "<group>"; };
+		94743F5925501081005C2C58 /* ChatWhiteBoardHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatWhiteBoardHandler.m; sourceTree = "<group>"; };
+		94743F5A25501081005C2C58 /* ChatGPUImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatGPUImageHandler.m; sourceTree = "<group>"; };
+		94743F5C25501081005C2C58 /* ChatLocalDataInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatLocalDataInfoModel.h; sourceTree = "<group>"; };
+		94743F5D25501081005C2C58 /* ChatCellVideoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCellVideoViewModel.m; sourceTree = "<group>"; };
+		94743F5E25501081005C2C58 /* ChatDataInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDataInfoModel.h; sourceTree = "<group>"; };
+		94743F5F25501081005C2C58 /* ChatCellVideoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCellVideoViewModel.h; sourceTree = "<group>"; };
+		94743F6025501081005C2C58 /* ChatLocalDataInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatLocalDataInfoModel.m; sourceTree = "<group>"; };
+		94743F6125501081005C2C58 /* ChatDataInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDataInfoModel.m; sourceTree = "<group>"; };
+		94743F6225501081005C2C58 /* ChatMembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMembersViewController.h; sourceTree = "<group>"; };
+		94743F6425501081005C2C58 /* RongRTCGPUPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RongRTCGPUPreviewView.h; sourceTree = "<group>"; };
+		94743F6525501081005C2C58 /* my_homeland.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = my_homeland.aac; sourceTree = "<group>"; };
+		94743F6625501081005C2C58 /* RTActiveWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTActiveWheel.h; sourceTree = "<group>"; };
+		94743F6725501081005C2C58 /* RCRTCFileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRTCFileSource.h; sourceTree = "<group>"; };
+		94743F6825501081005C2C58 /* RongAudioVolumeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RongAudioVolumeControl.h; sourceTree = "<group>"; };
+		94743F6925501081005C2C58 /* video_demo1_low.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_demo1_low.mp4; sourceTree = "<group>"; };
+		94743F6A25501081005C2C58 /* voip_network_error_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = voip_network_error_sound.wav; sourceTree = "<group>"; };
+		94743F6B25501081005C2C58 /* RongRTCGPUPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RongRTCGPUPreviewView.m; sourceTree = "<group>"; };
+		94743F6C25501081005C2C58 /* RTActiveWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTActiveWheel.m; sourceTree = "<group>"; };
+		94743F6D25501081005C2C58 /* video_demo2_low.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_demo2_low.mp4; sourceTree = "<group>"; };
+		94743F6E25501081005C2C58 /* RongAudioVolumeControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RongAudioVolumeControl.m; sourceTree = "<group>"; };
+		94743F6F25501081005C2C58 /* RCRTCFileSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRTCFileSource.m; sourceTree = "<group>"; };
+		94743F7025501081005C2C58 /* ChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManager.m; sourceTree = "<group>"; };
+		94743F7225501081005C2C58 /* UIViews+Localized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViews+Localized.h"; sourceTree = "<group>"; };
+		94743F7325501081005C2C58 /* STAudioMixingPannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioMixingPannelController.h; sourceTree = "<group>"; };
+		94743F7425501081005C2C58 /* STAudioModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioModeViewController.h; sourceTree = "<group>"; };
+		94743F7525501081005C2C58 /* STAudioMixerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioMixerConfiguration.m; sourceTree = "<group>"; };
+		94743F7625501081005C2C58 /* STAudioModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioModeViewController.m; sourceTree = "<group>"; };
+		94743F7725501081005C2C58 /* STAudioMixingPannelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioMixingPannelController.m; sourceTree = "<group>"; };
+		94743F7825501081005C2C58 /* UIViews+Localized.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViews+Localized.m"; sourceTree = "<group>"; };
+		94743F7925501081005C2C58 /* STAudioMixerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioMixerConfiguration.h; sourceTree = "<group>"; };
+		94743F7A25501081005C2C58 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		94743F7C25501081005C2C58 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		94743F7E25501081005C2C58 /* GPUImageOutputCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageOutputCamera.h; sourceTree = "<group>"; };
+		94743F7F25501081005C2C58 /* GPUImageBeautyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautyFilter.h; sourceTree = "<group>"; };
+		94743F8025501081005C2C58 /* GPUImageOutputCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageOutputCamera.m; sourceTree = "<group>"; };
+		94743F8125501082005C2C58 /* GPUImageBeautyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautyFilter.m; sourceTree = "<group>"; };
+		94743F8625501082005C2C58 /* WhiteRoomState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteRoomState.m; sourceTree = "<group>"; };
+		94743F8725501082005C2C58 /* WhiteRoomCallbacks+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhiteRoomCallbacks+Private.h"; sourceTree = "<group>"; };
+		94743F8825501082005C2C58 /* WhiteBroadcastState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteBroadcastState.m; sourceTree = "<group>"; };
+		94743F8925501082005C2C58 /* WhiteRoom+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhiteRoom+Private.h"; sourceTree = "<group>"; };
+		94743F8A25501082005C2C58 /* WhiteRoomCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteRoomCallbacks.h; sourceTree = "<group>"; };
+		94743F8B25501082005C2C58 /* WhiteRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteRoom.h; sourceTree = "<group>"; };
+		94743F8C25501082005C2C58 /* WhiteSDK+Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhiteSDK+Room.h"; sourceTree = "<group>"; };
+		94743F8D25501082005C2C58 /* WhiteImageInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteImageInformation.h; sourceTree = "<group>"; };
+		94743F8E25501082005C2C58 /* WhiteRoomConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteRoomConfig.h; sourceTree = "<group>"; };
+		94743F8F25501082005C2C58 /* WhiteRoomCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteRoomCallbacks.m; sourceTree = "<group>"; };
+		94743F9025501082005C2C58 /* WhiteBroadcastState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteBroadcastState.h; sourceTree = "<group>"; };
+		94743F9125501082005C2C58 /* WhiteRoomState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteRoomState.h; sourceTree = "<group>"; };
+		94743F9225501082005C2C58 /* WhiteImageInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteImageInformation.m; sourceTree = "<group>"; };
+		94743F9325501082005C2C58 /* WhiteRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteRoom.m; sourceTree = "<group>"; };
+		94743F9425501082005C2C58 /* WhiteSDK+Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WhiteSDK+Room.m"; sourceTree = "<group>"; };
+		94743F9525501082005C2C58 /* WhiteRoomConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteRoomConfig.m; sourceTree = "<group>"; };
+		94743F9725501082005C2C58 /* WhiteConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteConverter.h; sourceTree = "<group>"; };
+		94743F9825501082005C2C58 /* WhiteConversionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteConversionInfo.m; sourceTree = "<group>"; };
+		94743F9925501082005C2C58 /* WhiteConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteConverter.m; sourceTree = "<group>"; };
+		94743F9A25501082005C2C58 /* WhiteConversionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteConversionInfo.h; sourceTree = "<group>"; };
+		94743F9C25501082005C2C58 /* WhiteOriginPrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteOriginPrefetcher.m; sourceTree = "<group>"; };
+		94743F9D25501082005C2C58 /* WhiteOriginPrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteOriginPrefetcher.h; sourceTree = "<group>"; };
+		94743F9F25501082005C2C58 /* WhiteDisplayer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhiteDisplayer+Private.h"; sourceTree = "<group>"; };
+		94743FA025501082005C2C58 /* WhiteBoardView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhiteBoardView+Private.h"; sourceTree = "<group>"; };
+		94743FA125501082005C2C58 /* WhiteDisplayerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteDisplayerState.h; sourceTree = "<group>"; };
+		94743FA225501082005C2C58 /* WhiteWebViewInjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteWebViewInjection.h; sourceTree = "<group>"; };
+		94743FA325501082005C2C58 /* WhiteBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteBoardView.h; sourceTree = "<group>"; };
+		94743FA425501082005C2C58 /* WhiteCommonCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteCommonCallbacks.m; sourceTree = "<group>"; };
+		94743FA525501082005C2C58 /* WhiteGlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteGlobalState.h; sourceTree = "<group>"; };
+		94743FA625501082005C2C58 /* WhiteDisplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteDisplayer.h; sourceTree = "<group>"; };
+		94743FA725501082005C2C58 /* WhiteDisplayerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteDisplayerState.m; sourceTree = "<group>"; };
+		94743FA825501082005C2C58 /* WhiteWebViewInjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteWebViewInjection.m; sourceTree = "<group>"; };
+		94743FA925501082005C2C58 /* WhiteDisplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteDisplayer.m; sourceTree = "<group>"; };
+		94743FAA25501082005C2C58 /* WhiteGlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteGlobalState.m; sourceTree = "<group>"; };
+		94743FAB25501082005C2C58 /* WhiteCommonCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteCommonCallbacks.h; sourceTree = "<group>"; };
+		94743FAC25501082005C2C58 /* WhiteBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteBoardView.m; sourceTree = "<group>"; };
+		94743FAE25501082005C2C58 /* WhitePlayerTimeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePlayerTimeInfo.h; sourceTree = "<group>"; };
+		94743FAF25501082005C2C58 /* WhitePlayer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhitePlayer+Private.h"; sourceTree = "<group>"; };
+		94743FB025501082005C2C58 /* WhitePlayerEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhitePlayerEvent.m; sourceTree = "<group>"; };
+		94743FB125501082005C2C58 /* WhiteSDK+Replayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WhiteSDK+Replayer.m"; sourceTree = "<group>"; };
+		94743FB225501082005C2C58 /* WhitePlayerEvent+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhitePlayerEvent+Private.h"; sourceTree = "<group>"; };
+		94743FB325501082005C2C58 /* WhitePlayerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhitePlayerConfig.m; sourceTree = "<group>"; };
+		94743FB425501082005C2C58 /* WhitePlayerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePlayerState.h; sourceTree = "<group>"; };
+		94743FB525501082005C2C58 /* WhitePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePlayer.h; sourceTree = "<group>"; };
+		94743FB625501082005C2C58 /* WhitePlayerConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePlayerConsts.h; sourceTree = "<group>"; };
+		94743FB725501082005C2C58 /* WhitePlayerTimeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhitePlayerTimeInfo.m; sourceTree = "<group>"; };
+		94743FB825501082005C2C58 /* WhiteSDK+Replayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhiteSDK+Replayer.h"; sourceTree = "<group>"; };
+		94743FB925501082005C2C58 /* WhitePlayerEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePlayerEvent.h; sourceTree = "<group>"; };
+		94743FBA25501082005C2C58 /* WhitePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhitePlayer.m; sourceTree = "<group>"; };
+		94743FBB25501082005C2C58 /* WhitePlayerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhitePlayerState.m; sourceTree = "<group>"; };
+		94743FBC25501082005C2C58 /* WhitePlayerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePlayerConfig.h; sourceTree = "<group>"; };
+		94743FBE25501082005C2C58 /* WhiteScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteScene.m; sourceTree = "<group>"; };
+		94743FBF25501082005C2C58 /* WhiteRoomMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteRoomMember.m; sourceTree = "<group>"; };
+		94743FC025501082005C2C58 /* WhiteConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteConsts.m; sourceTree = "<group>"; };
+		94743FC125501082005C2C58 /* WhiteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteObject.m; sourceTree = "<group>"; };
+		94743FC225501082005C2C58 /* WhiteCameraBound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteCameraBound.h; sourceTree = "<group>"; };
+		94743FC325501082005C2C58 /* WhitePptPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhitePptPage.m; sourceTree = "<group>"; };
+		94743FC425501082005C2C58 /* WhiteSceneState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteSceneState.m; sourceTree = "<group>"; };
+		94743FC525501082005C2C58 /* WhiteCameraConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteCameraConfig.h; sourceTree = "<group>"; };
+		94743FC625501082005C2C58 /* WhiteMemberState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteMemberState.m; sourceTree = "<group>"; };
+		94743FC725501082005C2C58 /* WhiteMemberInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteMemberInformation.h; sourceTree = "<group>"; };
+		94743FC825501082005C2C58 /* WhitePanEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhitePanEvent.m; sourceTree = "<group>"; };
+		94743FC925501082005C2C58 /* WhiteEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteEvent.h; sourceTree = "<group>"; };
+		94743FCA25501082005C2C58 /* WhiteRectangleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteRectangleConfig.m; sourceTree = "<group>"; };
+		94743FCB25501082005C2C58 /* WhiteCameraBound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteCameraBound.m; sourceTree = "<group>"; };
+		94743FCC25501082005C2C58 /* WhiteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteObject.h; sourceTree = "<group>"; };
+		94743FCD25501082005C2C58 /* WhiteConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteConsts.h; sourceTree = "<group>"; };
+		94743FCE25501082005C2C58 /* WhiteRoomMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteRoomMember.h; sourceTree = "<group>"; };
+		94743FCF25501082005C2C58 /* WhiteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteScene.h; sourceTree = "<group>"; };
+		94743FD025501082005C2C58 /* WhiteMemberInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteMemberInformation.m; sourceTree = "<group>"; };
+		94743FD125501082005C2C58 /* WhiteMemberState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteMemberState.h; sourceTree = "<group>"; };
+		94743FD225501082005C2C58 /* WhiteCameraConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteCameraConfig.m; sourceTree = "<group>"; };
+		94743FD325501082005C2C58 /* WhiteSceneState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteSceneState.h; sourceTree = "<group>"; };
+		94743FD425501082005C2C58 /* WhitePptPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePptPage.h; sourceTree = "<group>"; };
+		94743FD525501082005C2C58 /* WhiteEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteEvent.m; sourceTree = "<group>"; };
+		94743FD625501082005C2C58 /* WhitePanEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhitePanEvent.h; sourceTree = "<group>"; };
+		94743FD725501082005C2C58 /* WhiteRectangleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteRectangleConfig.h; sourceTree = "<group>"; };
+		94743FD925501082005C2C58 /* WhiteSdkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteSdkConfiguration.m; sourceTree = "<group>"; };
+		94743FDA25501082005C2C58 /* WhiteSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteSDK.m; sourceTree = "<group>"; };
+		94743FDB25501082005C2C58 /* WhiteSDK+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WhiteSDK+Private.h"; sourceTree = "<group>"; };
+		94743FDC25501082005C2C58 /* WhiteSdkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteSdkConfiguration.h; sourceTree = "<group>"; };
+		94743FDD25501082005C2C58 /* WhiteSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteSDK.h; sourceTree = "<group>"; };
+		94743FDE25501082005C2C58 /* Whiteboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whiteboard.h; sourceTree = "<group>"; };
+		94743FE025501082005C2C58 /* WhiteVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteVideoView.m; sourceTree = "<group>"; };
+		94743FE125501082005C2C58 /* WhiteCombinePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteCombinePlayer.m; sourceTree = "<group>"; };
+		94743FE225501082005C2C58 /* WhiteSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteSliderView.m; sourceTree = "<group>"; };
+		94743FE325501082005C2C58 /* WhiteVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteVideoView.h; sourceTree = "<group>"; };
+		94743FE425501082005C2C58 /* WhiteSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteSliderView.h; sourceTree = "<group>"; };
+		94743FE525501082005C2C58 /* WhiteCombinePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteCombinePlayer.h; sourceTree = "<group>"; };
+		94743FE725501082005C2C58 /* Whiteboard.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Whiteboard.bundle; sourceTree = "<group>"; };
+		94743FE825501082005C2C58 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		94743FEA25501082005C2C58 /* dsbridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsbridge.h; sourceTree = "<group>"; };
+		94743FEB25501082005C2C58 /* InternalApis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalApis.h; sourceTree = "<group>"; };
+		94743FEC25501082005C2C58 /* DSCallInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCallInfo.m; sourceTree = "<group>"; };
+		94743FED25501082005C2C58 /* JSBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBUtil.h; sourceTree = "<group>"; };
+		94743FEE25501082005C2C58 /* DWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWKWebView.h; sourceTree = "<group>"; };
+		94743FEF25501082005C2C58 /* DSCallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCallInfo.h; sourceTree = "<group>"; };
+		94743FF025501082005C2C58 /* InternalApis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternalApis.m; sourceTree = "<group>"; };
+		94743FF125501082005C2C58 /* JSBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBUtil.m; sourceTree = "<group>"; };
+		94743FF225501082005C2C58 /* DWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWKWebView.m; sourceTree = "<group>"; };
+		94743FF325501082005C2C58 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		94743FF425501082005C2C58 /* libvo-amrwbenc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libvo-amrwbenc.a"; sourceTree = "<group>"; };
+		94743FF625501082005C2C58 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		94743FF725501082005C2C58 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		94743FF925501082005C2C58 /* ColorSelectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorSelectionCollectionViewController.m; sourceTree = "<group>"; };
+		94743FFA25501082005C2C58 /* DWBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWBubbleMenuButton.m; sourceTree = "<group>"; };
+		94743FFB25501082005C2C58 /* WhiteBoardWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteBoardWebView.h; sourceTree = "<group>"; };
+		94743FFC25501082005C2C58 /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		94743FFD25501082005C2C58 /* BlinkExcelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlinkExcelView.m; sourceTree = "<group>"; };
+		94743FFE25501082005C2C58 /* ZHPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHPickView.h; sourceTree = "<group>"; };
+		94743FFF25501082005C2C58 /* SXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXAlertView.m; sourceTree = "<group>"; };
+		9474400025501082005C2C58 /* ChatAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatAvatarView.h; sourceTree = "<group>"; };
+		9474400125501082005C2C58 /* RadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioButton.m; sourceTree = "<group>"; };
+		9474400225501082005C2C58 /* MessageStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageStatusBar.h; sourceTree = "<group>"; };
+		9474400425501082005C2C58 /* YHExcelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelView.m; sourceTree = "<group>"; };
+		9474400525501082005C2C58 /* UIView+YHCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YHCategory.h"; sourceTree = "<group>"; };
+		9474400625501082005C2C58 /* YHExcelViewColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelViewColumn.h; sourceTree = "<group>"; };
+		9474400725501082005C2C58 /* YHExcelViewIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelViewIndexPath.m; sourceTree = "<group>"; };
+		9474400825501082005C2C58 /* YHExcelTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelTitleView.m; sourceTree = "<group>"; };
+		9474400925501082005C2C58 /* YHExcelViewColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHExcelViewColumn.m; sourceTree = "<group>"; };
+		9474400A25501082005C2C58 /* UIView+YHCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YHCategory.m"; sourceTree = "<group>"; };
+		9474400B25501082005C2C58 /* YHExcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcel.h; sourceTree = "<group>"; };
+		9474400C25501082005C2C58 /* YHExcelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelView.h; sourceTree = "<group>"; };
+		9474400D25501082005C2C58 /* YHExcelViewIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelViewIndexPath.h; sourceTree = "<group>"; };
+		9474400E25501082005C2C58 /* YHExcelTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHExcelTitleView.h; sourceTree = "<group>"; };
+		9474400F25501082005C2C58 /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		9474401025501082005C2C58 /* WhiteBoardWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteBoardWebView.m; sourceTree = "<group>"; };
+		9474401125501082005C2C58 /* DWBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWBubbleMenuButton.h; sourceTree = "<group>"; };
+		9474401225501082005C2C58 /* ColorSelectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorSelectionCollectionViewController.h; sourceTree = "<group>"; };
+		9474401325501082005C2C58 /* BlinkExcelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlinkExcelView.h; sourceTree = "<group>"; };
+		9474401425501082005C2C58 /* ChatAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatAvatarView.m; sourceTree = "<group>"; };
+		9474401525501082005C2C58 /* SXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXAlertView.h; sourceTree = "<group>"; };
+		9474401625501082005C2C58 /* ZHPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHPickView.m; sourceTree = "<group>"; };
+		9474401725501082005C2C58 /* MessageStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageStatusBar.m; sourceTree = "<group>"; };
+		9474401825501082005C2C58 /* RadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioButton.h; sourceTree = "<group>"; };
+		9474401A25501082005C2C58 /* RongWhiteBoardMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RongWhiteBoardMessage.m; sourceTree = "<group>"; };
+		9474401B25501082005C2C58 /* RongWhiteBoardMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RongWhiteBoardMessage.h; sourceTree = "<group>"; };
+		9474401D25501082005C2C58 /* RCRTCVideoCaptureParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRTCVideoCaptureParam.m; sourceTree = "<group>"; };
+		9474401E25501082005C2C58 /* SettingViewBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewBuilder.h; sourceTree = "<group>"; };
+		9474402025501082005C2C58 /* PrivateCloudSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateCloudSettingViewController.m; sourceTree = "<group>"; };
+		9474402125501082005C2C58 /* PrivateSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateSettingCell.m; sourceTree = "<group>"; };
+		9474402225501082005C2C58 /* PrivateSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivateSettingCell.xib; sourceTree = "<group>"; };
+		9474402325501082005C2C58 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		9474402425501082005C2C58 /* PrivateCloudSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateCloudSettingViewController.h; sourceTree = "<group>"; };
+		9474402525501082005C2C58 /* PrivateSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateSettingCell.h; sourceTree = "<group>"; };
+		9474402625501082005C2C58 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		9474402725501082005C2C58 /* RCRTCVideoCaptureParam+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCRTCVideoCaptureParam+Private.h"; sourceTree = "<group>"; };
+		9474402825501082005C2C58 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		9474402A25501082005C2C58 /* SettingTextFieldDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTextFieldDelegateImpl.m; sourceTree = "<group>"; };
+		9474402B25501082005C2C58 /* SettingTableViewDelegateSourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewDelegateSourceImpl.h; sourceTree = "<group>"; };
+		9474402C25501082005C2C58 /* SettingPickViewDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingPickViewDelegateImpl.h; sourceTree = "<group>"; };
+		9474402D25501082005C2C58 /* SettingTextFieldDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTextFieldDelegateImpl.h; sourceTree = "<group>"; };
+		9474402E25501082005C2C58 /* SettingPickViewDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingPickViewDelegateImpl.m; sourceTree = "<group>"; };
+		9474402F25501082005C2C58 /* SettingTableViewDelegateSourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewDelegateSourceImpl.m; sourceTree = "<group>"; };
+		9474403025501082005C2C58 /* SettingViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewBuilder.m; sourceTree = "<group>"; };
+		9474403125501082005C2C58 /* RCRTCVideoCaptureParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRTCVideoCaptureParam.h; sourceTree = "<group>"; };
+		9474403225501082005C2C58 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		9474403425501082005C2C58 /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		9474403525501082005C2C58 /* RTCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCLoginViewController.m; sourceTree = "<group>"; };
+		9474403625501082005C2C58 /* RCSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSelectView.m; sourceTree = "<group>"; };
+		9474403725501082005C2C58 /* RCBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCBackView.h; sourceTree = "<group>"; };
+		9474403825501082005C2C58 /* RCSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSelectModel.h; sourceTree = "<group>"; };
+		9474403925501082005C2C58 /* LoginViewBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewBuilder.m; sourceTree = "<group>"; };
+		9474403B25501082005C2C58 /* LoginTextFieldDelegateImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTextFieldDelegateImpl.h; sourceTree = "<group>"; };
+		9474403C25501082005C2C58 /* LoginTextFieldDelegateImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTextFieldDelegateImpl.m; sourceTree = "<group>"; };
+		9474403D25501082005C2C58 /* RTCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCLoginViewController.h; sourceTree = "<group>"; };
+		9474403E25501082005C2C58 /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
+		9474403F25501082005C2C58 /* RCBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCBackView.m; sourceTree = "<group>"; };
+		9474404025501082005C2C58 /* RCSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSelectView.h; sourceTree = "<group>"; };
+		9474404125501082005C2C58 /* LoginViewBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewBuilder.h; sourceTree = "<group>"; };
+		9474404225501082005C2C58 /* RCSelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSelectModel.m; sourceTree = "<group>"; };
+		9474404425501082005C2C58 /* RCFetchTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCFetchTokenManager.h; sourceTree = "<group>"; };
+		9474404525501082005C2C58 /* RTHttpNetworkWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTHttpNetworkWorker.h; sourceTree = "<group>"; };
+		9474404625501082005C2C58 /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
+		9474404725501082005C2C58 /* CommonUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtility.m; sourceTree = "<group>"; };
+		9474404825501082005C2C58 /* WhiteUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteUtils.h; sourceTree = "<group>"; };
+		9474404925501082005C2C58 /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
+		9474404A25501082005C2C58 /* RTHttpNetworkWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTHttpNetworkWorker.m; sourceTree = "<group>"; };
+		9474404B25501082005C2C58 /* RCFetchTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCFetchTokenManager.m; sourceTree = "<group>"; };
+		9474404C25501082005C2C58 /* WhiteUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteUtils.m; sourceTree = "<group>"; };
+		9474404D25501082005C2C58 /* CommonUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtility.h; sourceTree = "<group>"; };
+		94B0E052252189F2006E081A /* PXDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXDBaseViewController.h; sourceTree = "<group>"; };
+		94B0E053252189F2006E081A /* PXDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXDBaseViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3918EDF4226D67F9004676C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048030E922D58DBF00E7A257 /* PushKit.framework in Frameworks */,
+				947440B125501082005C2C58 /* libvo-amrwbenc.a in Frameworks */,
+				947440AB25501082005C2C58 /* libopencore-amrwb.a in Frameworks */,
+				947440B025501082005C2C58 /* libopencore-amrnb.a in Frameworks */,
+				9474407F25501082005C2C58 /* GPUImage.framework in Frameworks */,
+				506B9F2FD9B60B1AE7B09834 /* Pods_DoctorClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		231533139FC33E3861D2F0EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				048030E822D58DBF00E7A257 /* PushKit.framework */,
+				00A6204FCC4645FFA8D8A94D /* Pods_DoctorClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3918EDEE226D67F9004676C7 = {
+			isa = PBXGroup;
+			children = (
+				3918EDF9226D67F9004676C7 /* DoctorClient */,
+				3918EDF8226D67F9004676C7 /* Products */,
+				231533139FC33E3861D2F0EC /* Frameworks */,
+				BE901C93C89A3EE1AE173CA0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3918EDF8226D67F9004676C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3918EDF7226D67F9004676C7 /* DC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3918EDF9226D67F9004676C7 /* DoctorClient */ = {
+			isa = PBXGroup;
+			children = (
+				3918EE19226D712B004676C7 /* AppDelegate */,
+				3918EE10226D6929004676C7 /* Controller */,
+				3918EE03226D67FB004676C7 /* Assets.xcassets */,
+				3918EE08226D67FB004676C7 /* Info.plist */,
+				3918EE09226D67FB004676C7 /* main.m */,
+				946273A9253D982B0068494D /* sound.gif */,
+				3918EE21226D7220004676C7 /* DoctorClient.pch */,
+			);
+			path = DoctorClient;
+			sourceTree = "<group>";
+		};
+		3918EE10226D6929004676C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9420CC9025358DFE0057EF4E /* 视频问诊 */,
+				3918EE23226D898F004676C7 /* 1-首页 */,
+				3918EE22226D898F004676C7 /* 4-我的 */,
+				3918EE11226D696D004676C7 /* Other */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3918EE11226D696D004676C7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				947020BE251D943400DC89F4 /* BaseViewController */,
+				947020BD251D93A300DC89F4 /* CustomNavigationController */,
+				947020AD251D8F9F00DC89F4 /* CustomTabberController */,
+				4483E2CE23A7338B00D7C020 /* WMPageController */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3918EE19226D712B004676C7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3918EE1A226D712B004676C7 /* AppDelegate.h */,
+				3918EE1B226D712B004676C7 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3918EE22226D898F004676C7 /* 4-我的 */ = {
+			isa = PBXGroup;
+			children = (
+				3918EE32226D8A45004676C7 /* 我的 */,
+			);
+			path = "4-我的";
+			sourceTree = "<group>";
+		};
+		3918EE23226D898F004676C7 /* 1-首页 */ = {
+			isa = PBXGroup;
+			children = (
+				3918EE26226D89AA004676C7 /* 首页VC */,
+			);
+			path = "1-首页";
+			sourceTree = "<group>";
+		};
+		3918EE26226D89AA004676C7 /* 首页VC */ = {
+			isa = PBXGroup;
+			children = (
+				3918EE2B226D89E3004676C7 /* HomeViewController.h */,
+				3918EE2C226D89E3004676C7 /* HomeViewController.m */,
+			);
+			path = "首页VC";
+			sourceTree = "<group>";
+		};
+		3918EE32226D8A45004676C7 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				3918EE33226D8A4D004676C7 /* MineViewController.h */,
+				3918EE34226D8A4D004676C7 /* MineViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		4483E2CE23A7338B00D7C020 /* WMPageController */ = {
+			isa = PBXGroup;
+			children = (
+				4483E2DA23A7338C00D7C020 /* WMPageController.h */,
+				4483E2CF23A7338B00D7C020 /* WMPageController.m */,
+				4483E2D023A7338B00D7C020 /* WMPageConst.h */,
+				4483E2D123A7338B00D7C020 /* WMMenuView */,
+			);
+			path = WMPageController;
+			sourceTree = "<group>";
+		};
+		4483E2D123A7338B00D7C020 /* WMMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				4483E2D223A7338B00D7C020 /* WMScrollView.h */,
+				4483E2D323A7338B00D7C020 /* WMMenuItem.h */,
+				4483E2D423A7338B00D7C020 /* WMMenuView.h */,
+				4483E2D523A7338B00D7C020 /* WMProgressView.h */,
+				4483E2D623A7338B00D7C020 /* WMMenuItem.m */,
+				4483E2D723A7338B00D7C020 /* WMScrollView.m */,
+				4483E2D823A7338C00D7C020 /* WMMenuView.m */,
+				4483E2D923A7338C00D7C020 /* WMProgressView.m */,
+			);
+			path = WMMenuView;
+			sourceTree = "<group>";
+		};
+		9420CC9025358DFE0057EF4E /* 视频问诊 */ = {
+			isa = PBXGroup;
+			children = (
+				94743F1925501081005C2C58 /* MeetingChat */,
+			);
+			path = "视频问诊";
+			sourceTree = "<group>";
+		};
+		947020AD251D8F9F00DC89F4 /* CustomTabberController */ = {
+			isa = PBXGroup;
+			children = (
+				947020D6251D96F700DC89F4 /* PXDTabbarController.h */,
+				947020D7251D96F700DC89F4 /* PXDTabbarController.m */,
+			);
+			path = CustomTabberController;
+			sourceTree = "<group>";
+		};
+		947020BD251D93A300DC89F4 /* CustomNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				947020C0251D944D00DC89F4 /* FMNavBaseViewController.h */,
+				947020C2251D944D00DC89F4 /* FMNavBaseViewController.m */,
+				947020C3251D944D00DC89F4 /* FMNavigationBar.h */,
+				947020C1251D944D00DC89F4 /* FMNavigationBar.m */,
+				947020C4251D944E00DC89F4 /* UINavigationBar+handle.h */,
+				947020BF251D944C00DC89F4 /* UINavigationBar+handle.m */,
+			);
+			path = CustomNavigationController;
+			sourceTree = "<group>";
+		};
+		947020BE251D943400DC89F4 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				947020C9251D945900DC89F4 /* FMBaseScrollViewController.h */,
+				947020CA251D945A00DC89F4 /* FMBaseScrollViewController.m */,
+				945D157D2521C55D0045D23B /* PXDBaseTableViewController.h */,
+				945D157E2521C55D0045D23B /* PXDBaseTableViewController.m */,
+				94B0E052252189F2006E081A /* PXDBaseViewController.h */,
+				94B0E053252189F2006E081A /* PXDBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		94743F1925501081005C2C58 /* MeetingChat */ = {
+			isa = PBXGroup;
+			children = (
+				94743F1A25501081005C2C58 /* plist */,
+				94743F2025501081005C2C58 /* participants */,
+				94743F3125501081005C2C58 /* Category */,
+				94743F3C25501081005C2C58 /* Chat */,
+				94743F7B25501081005C2C58 /* Framework */,
+				94743F7D25501081005C2C58 /* GPUImage */,
+				94743F8225501082005C2C58 /* 3rd */,
+				94743FF825501082005C2C58 /* Component */,
+				9474401925501082005C2C58 /* Message */,
+				9474401C25501082005C2C58 /* Setting */,
+				9474403325501082005C2C58 /* Login */,
+				9474404325501082005C2C58 /* Utility */,
+			);
+			path = MeetingChat;
+			sourceTree = "<group>";
+		};
+		94743F1A25501081005C2C58 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				94743F1B25501081005C2C58 /* FrameRate.plist */,
+				94743F1C25501081005C2C58 /* Dynamic_resolution.plist */,
+				94743F1D25501081005C2C58 /* CodeRate.plist */,
+				94743F1E25501081005C2C58 /* ResolutionRatio.plist */,
+				94743F1F25501081005C2C58 /* CodingStyle.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		94743F2025501081005C2C58 /* participants */ = {
+			isa = PBXGroup;
+			children = (
+				94743F2125501081005C2C58 /* STDeleteRoomInfoMessage.h */,
+				94743F2225501081005C2C58 /* STParticipantsTableViewController.h */,
+				94743F2325501081005C2C58 /* STParticipantsTableViewHeader.m */,
+				94743F2425501081005C2C58 /* STKickOffInfoMessage.m */,
+				94743F2525501081005C2C58 /* STParticipantsInfo.m */,
+				94743F2625501081005C2C58 /* STJSONModel.m */,
+				94743F2725501081005C2C58 /* STPresentationViewController.m */,
+				94743F2825501081005C2C58 /* STSetRoomInfoMessage.m */,
+				94743F2925501081005C2C58 /* STParticipantsTableViewController.m */,
+				94743F2A25501081005C2C58 /* STDeleteRoomInfoMessage.m */,
+				94743F2B25501081005C2C58 /* STKickOffInfoMessage.h */,
+				94743F2C25501081005C2C58 /* STParticipantsTableViewHeader.h */,
+				94743F2D25501081005C2C58 /* STJSONModel.h */,
+				94743F2E25501081005C2C58 /* STParticipantsInfo.h */,
+				94743F2F25501081005C2C58 /* STSetRoomInfoMessage.h */,
+				94743F3025501081005C2C58 /* STPresentationViewController.h */,
+			);
+			path = participants;
+			sourceTree = "<group>";
+		};
+		94743F3125501081005C2C58 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				94743F3225501081005C2C58 /* UIColor+ColorChange.m */,
+				94743F3325501081005C2C58 /* UICollectionView+RongRTCBgView.h */,
+				94743F3425501081005C2C58 /* NSString+length.h */,
+				94743F3525501081005C2C58 /* UINavigationController+returnBack.h */,
+				94743F3625501081005C2C58 /* UIScrollView+Responder.h */,
+				94743F3725501081005C2C58 /* UICollectionView+RongRTCBgView.m */,
+				94743F3825501081005C2C58 /* UIColor+ColorChange.h */,
+				94743F3925501081005C2C58 /* UINavigationController+returnBack.m */,
+				94743F3A25501081005C2C58 /* NSString+length.m */,
+				94743F3B25501081005C2C58 /* UIScrollView+Responder.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		94743F3C25501081005C2C58 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				94743F3D25501081005C2C58 /* ChatMembersViewController.m */,
+				94743F3E25501081005C2C58 /* ChatGPUImageHandler.h */,
+				94743F3F25501081005C2C58 /* ChatWhiteBoardHandler.h */,
+				94743F4025501081005C2C58 /* ChatViewBuilder.h */,
+				94743F4125501081005C2C58 /* ChatViewController.m */,
+				94743F4225501081005C2C58 /* Delegate */,
+				94743F5325501081005C2C58 /* ChatManager.h */,
+				94743F5425501081005C2C58 /* Cell */,
+				94743F5825501081005C2C58 /* ChatViewBuilder.m */,
+				94743F5925501081005C2C58 /* ChatWhiteBoardHandler.m */,
+				94743F5A25501081005C2C58 /* ChatGPUImageHandler.m */,
+				94743F5B25501081005C2C58 /* Model */,
+				94743F6225501081005C2C58 /* ChatMembersViewController.h */,
+				94743F6325501081005C2C58 /* Custom */,
+				94743F7025501081005C2C58 /* ChatManager.m */,
+				94743F7125501081005C2C58 /* AudioMixer */,
+				94743F7A25501081005C2C58 /* ChatViewController.h */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		94743F4225501081005C2C58 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				94743F4325501081005C2C58 /* ChatRongVideoRTCEncryptorDelegateImpl.h */,
+				94743F4425501081005C2C58 /* ChatRongAudioRTCDecryptorDelegateImpl.h */,
+				94743F4525501081005C2C58 /* ChatCollectionViewDataSourceDelegateImpl.m */,
+				94743F4625501081005C2C58 /* ChatRongVideoRTCDecryptorDelegateImpl.m */,
+				94743F4725501081005C2C58 /* ChatRongAudioRTCEncryptorDelegateImpl.m */,
+				94743F4825501081005C2C58 /* ChatBubbleMenuViewDelegateImpl.m */,
+				94743F4925501081005C2C58 /* ChatRongRTCNetworkMonitorDelegateImpl.m */,
+				94743F4A25501081005C2C58 /* ChatRongRTCRoomDelegateImpl.m */,
+				94743F4B25501081005C2C58 /* ChatRongVideoRTCEncryptorDelegateImpl.m */,
+				94743F4C25501081005C2C58 /* ChatRongAudioRTCDecryptorDelegateImpl.m */,
+				94743F4D25501081005C2C58 /* ChatRongVideoRTCDecryptorDelegateImpl.h */,
+				94743F4E25501081005C2C58 /* ChatCollectionViewDataSourceDelegateImpl.h */,
+				94743F4F25501081005C2C58 /* ChatRongRTCRoomDelegateImpl.h */,
+				94743F5025501081005C2C58 /* ChatRongRTCNetworkMonitorDelegateImpl.h */,
+				94743F5125501081005C2C58 /* ChatBubbleMenuViewDelegateImpl.h */,
+				94743F5225501081005C2C58 /* ChatRongAudioRTCEncryptorDelegateImpl.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		94743F5425501081005C2C58 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				94743F5525501081005C2C58 /* ChatMemberCell.xib */,
+				94743F5625501081005C2C58 /* ChatMemberCell.m */,
+				94743F5725501081005C2C58 /* ChatMemberCell.h */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		94743F5B25501081005C2C58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94743F5C25501081005C2C58 /* ChatLocalDataInfoModel.h */,
+				94743F5D25501081005C2C58 /* ChatCellVideoViewModel.m */,
+				94743F5E25501081005C2C58 /* ChatDataInfoModel.h */,
+				94743F5F25501081005C2C58 /* ChatCellVideoViewModel.h */,
+				94743F6025501081005C2C58 /* ChatLocalDataInfoModel.m */,
+				94743F6125501081005C2C58 /* ChatDataInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94743F6325501081005C2C58 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				94743F6425501081005C2C58 /* RongRTCGPUPreviewView.h */,
+				94743F6525501081005C2C58 /* my_homeland.aac */,
+				94743F6625501081005C2C58 /* RTActiveWheel.h */,
+				94743F6725501081005C2C58 /* RCRTCFileSource.h */,
+				94743F6825501081005C2C58 /* RongAudioVolumeControl.h */,
+				94743F6925501081005C2C58 /* video_demo1_low.mp4 */,
+				94743F6A25501081005C2C58 /* voip_network_error_sound.wav */,
+				94743F6B25501081005C2C58 /* RongRTCGPUPreviewView.m */,
+				94743F6C25501081005C2C58 /* RTActiveWheel.m */,
+				94743F6D25501081005C2C58 /* video_demo2_low.mp4 */,
+				94743F6E25501081005C2C58 /* RongAudioVolumeControl.m */,
+				94743F6F25501081005C2C58 /* RCRTCFileSource.m */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		94743F7125501081005C2C58 /* AudioMixer */ = {
+			isa = PBXGroup;
+			children = (
+				94743F7225501081005C2C58 /* UIViews+Localized.h */,
+				94743F7325501081005C2C58 /* STAudioMixingPannelController.h */,
+				94743F7425501081005C2C58 /* STAudioModeViewController.h */,
+				94743F7525501081005C2C58 /* STAudioMixerConfiguration.m */,
+				94743F7625501081005C2C58 /* STAudioModeViewController.m */,
+				94743F7725501081005C2C58 /* STAudioMixingPannelController.m */,
+				94743F7825501081005C2C58 /* UIViews+Localized.m */,
+				94743F7925501081005C2C58 /* STAudioMixerConfiguration.h */,
+			);
+			path = AudioMixer;
+			sourceTree = "<group>";
+		};
+		94743F7B25501081005C2C58 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				94743F7C25501081005C2C58 /* GPUImage.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		94743F7D25501081005C2C58 /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				94743F7E25501081005C2C58 /* GPUImageOutputCamera.h */,
+				94743F7F25501081005C2C58 /* GPUImageBeautyFilter.h */,
+				94743F8025501081005C2C58 /* GPUImageOutputCamera.m */,
+				94743F8125501082005C2C58 /* GPUImageBeautyFilter.m */,
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
+		94743F8225501082005C2C58 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				94743F8325501082005C2C58 /* Whiteboard */,
+				94743FE825501082005C2C58 /* libopencore-amrwb.a */,
+				94743FE925501082005C2C58 /* dsBridge */,
+				94743FF325501082005C2C58 /* libopencore-amrnb.a */,
+				94743FF425501082005C2C58 /* libvo-amrwbenc.a */,
+				94743FF525501082005C2C58 /* Reachability */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
+		94743F8325501082005C2C58 /* Whiteboard */ = {
+			isa = PBXGroup;
+			children = (
+				94743F8425501082005C2C58 /* Classes */,
+				94743FE625501082005C2C58 /* Resource */,
+			);
+			path = Whiteboard;
+			sourceTree = "<group>";
+		};
+		94743F8425501082005C2C58 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94743F8525501082005C2C58 /* Room */,
+				94743F9625501082005C2C58 /* Converter */,
+				94743F9B25501082005C2C58 /* Utils */,
+				94743F9E25501082005C2C58 /* Displayer */,
+				94743FAD25501082005C2C58 /* Replayer */,
+				94743FBD25501082005C2C58 /* Object */,
+				94743FD825501082005C2C58 /* SDK */,
+				94743FDE25501082005C2C58 /* Whiteboard.h */,
+				94743FDF25501082005C2C58 /* NativeReplayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		94743F8525501082005C2C58 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				94743F8625501082005C2C58 /* WhiteRoomState.m */,
+				94743F8725501082005C2C58 /* WhiteRoomCallbacks+Private.h */,
+				94743F8825501082005C2C58 /* WhiteBroadcastState.m */,
+				94743F8925501082005C2C58 /* WhiteRoom+Private.h */,
+				94743F8A25501082005C2C58 /* WhiteRoomCallbacks.h */,
+				94743F8B25501082005C2C58 /* WhiteRoom.h */,
+				94743F8C25501082005C2C58 /* WhiteSDK+Room.h */,
+				94743F8D25501082005C2C58 /* WhiteImageInformation.h */,
+				94743F8E25501082005C2C58 /* WhiteRoomConfig.h */,
+				94743F8F25501082005C2C58 /* WhiteRoomCallbacks.m */,
+				94743F9025501082005C2C58 /* WhiteBroadcastState.h */,
+				94743F9125501082005C2C58 /* WhiteRoomState.h */,
+				94743F9225501082005C2C58 /* WhiteImageInformation.m */,
+				94743F9325501082005C2C58 /* WhiteRoom.m */,
+				94743F9425501082005C2C58 /* WhiteSDK+Room.m */,
+				94743F9525501082005C2C58 /* WhiteRoomConfig.m */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		94743F9625501082005C2C58 /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				94743F9725501082005C2C58 /* WhiteConverter.h */,
+				94743F9825501082005C2C58 /* WhiteConversionInfo.m */,
+				94743F9925501082005C2C58 /* WhiteConverter.m */,
+				94743F9A25501082005C2C58 /* WhiteConversionInfo.h */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		94743F9B25501082005C2C58 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				94743F9C25501082005C2C58 /* WhiteOriginPrefetcher.m */,
+				94743F9D25501082005C2C58 /* WhiteOriginPrefetcher.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		94743F9E25501082005C2C58 /* Displayer */ = {
+			isa = PBXGroup;
+			children = (
+				94743F9F25501082005C2C58 /* WhiteDisplayer+Private.h */,
+				94743FA025501082005C2C58 /* WhiteBoardView+Private.h */,
+				94743FA125501082005C2C58 /* WhiteDisplayerState.h */,
+				94743FA225501082005C2C58 /* WhiteWebViewInjection.h */,
+				94743FA325501082005C2C58 /* WhiteBoardView.h */,
+				94743FA425501082005C2C58 /* WhiteCommonCallbacks.m */,
+				94743FA525501082005C2C58 /* WhiteGlobalState.h */,
+				94743FA625501082005C2C58 /* WhiteDisplayer.h */,
+				94743FA725501082005C2C58 /* WhiteDisplayerState.m */,
+				94743FA825501082005C2C58 /* WhiteWebViewInjection.m */,
+				94743FA925501082005C2C58 /* WhiteDisplayer.m */,
+				94743FAA25501082005C2C58 /* WhiteGlobalState.m */,
+				94743FAB25501082005C2C58 /* WhiteCommonCallbacks.h */,
+				94743FAC25501082005C2C58 /* WhiteBoardView.m */,
+			);
+			path = Displayer;
+			sourceTree = "<group>";
+		};
+		94743FAD25501082005C2C58 /* Replayer */ = {
+			isa = PBXGroup;
+			children = (
+				94743FAE25501082005C2C58 /* WhitePlayerTimeInfo.h */,
+				94743FAF25501082005C2C58 /* WhitePlayer+Private.h */,
+				94743FB025501082005C2C58 /* WhitePlayerEvent.m */,
+				94743FB125501082005C2C58 /* WhiteSDK+Replayer.m */,
+				94743FB225501082005C2C58 /* WhitePlayerEvent+Private.h */,
+				94743FB325501082005C2C58 /* WhitePlayerConfig.m */,
+				94743FB425501082005C2C58 /* WhitePlayerState.h */,
+				94743FB525501082005C2C58 /* WhitePlayer.h */,
+				94743FB625501082005C2C58 /* WhitePlayerConsts.h */,
+				94743FB725501082005C2C58 /* WhitePlayerTimeInfo.m */,
+				94743FB825501082005C2C58 /* WhiteSDK+Replayer.h */,
+				94743FB925501082005C2C58 /* WhitePlayerEvent.h */,
+				94743FBA25501082005C2C58 /* WhitePlayer.m */,
+				94743FBB25501082005C2C58 /* WhitePlayerState.m */,
+				94743FBC25501082005C2C58 /* WhitePlayerConfig.h */,
+			);
+			path = Replayer;
+			sourceTree = "<group>";
+		};
+		94743FBD25501082005C2C58 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				94743FBE25501082005C2C58 /* WhiteScene.m */,
+				94743FBF25501082005C2C58 /* WhiteRoomMember.m */,
+				94743FC025501082005C2C58 /* WhiteConsts.m */,
+				94743FC125501082005C2C58 /* WhiteObject.m */,
+				94743FC225501082005C2C58 /* WhiteCameraBound.h */,
+				94743FC325501082005C2C58 /* WhitePptPage.m */,
+				94743FC425501082005C2C58 /* WhiteSceneState.m */,
+				94743FC525501082005C2C58 /* WhiteCameraConfig.h */,
+				94743FC625501082005C2C58 /* WhiteMemberState.m */,
+				94743FC725501082005C2C58 /* WhiteMemberInformation.h */,
+				94743FC825501082005C2C58 /* WhitePanEvent.m */,
+				94743FC925501082005C2C58 /* WhiteEvent.h */,
+				94743FCA25501082005C2C58 /* WhiteRectangleConfig.m */,
+				94743FCB25501082005C2C58 /* WhiteCameraBound.m */,
+				94743FCC25501082005C2C58 /* WhiteObject.h */,
+				94743FCD25501082005C2C58 /* WhiteConsts.h */,
+				94743FCE25501082005C2C58 /* WhiteRoomMember.h */,
+				94743FCF25501082005C2C58 /* WhiteScene.h */,
+				94743FD025501082005C2C58 /* WhiteMemberInformation.m */,
+				94743FD125501082005C2C58 /* WhiteMemberState.h */,
+				94743FD225501082005C2C58 /* WhiteCameraConfig.m */,
+				94743FD325501082005C2C58 /* WhiteSceneState.h */,
+				94743FD425501082005C2C58 /* WhitePptPage.h */,
+				94743FD525501082005C2C58 /* WhiteEvent.m */,
+				94743FD625501082005C2C58 /* WhitePanEvent.h */,
+				94743FD725501082005C2C58 /* WhiteRectangleConfig.h */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		94743FD825501082005C2C58 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				94743FD925501082005C2C58 /* WhiteSdkConfiguration.m */,
+				94743FDA25501082005C2C58 /* WhiteSDK.m */,
+				94743FDB25501082005C2C58 /* WhiteSDK+Private.h */,
+				94743FDC25501082005C2C58 /* WhiteSdkConfiguration.h */,
+				94743FDD25501082005C2C58 /* WhiteSDK.h */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		94743FDF25501082005C2C58 /* NativeReplayer */ = {
+			isa = PBXGroup;
+			children = (
+				94743FE025501082005C2C58 /* WhiteVideoView.m */,
+				94743FE125501082005C2C58 /* WhiteCombinePlayer.m */,
+				94743FE225501082005C2C58 /* WhiteSliderView.m */,
+				94743FE325501082005C2C58 /* WhiteVideoView.h */,
+				94743FE425501082005C2C58 /* WhiteSliderView.h */,
+				94743FE525501082005C2C58 /* WhiteCombinePlayer.h */,
+			);
+			path = NativeReplayer;
+			sourceTree = "<group>";
+		};
+		94743FE625501082005C2C58 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				94743FE725501082005C2C58 /* Whiteboard.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		94743FE925501082005C2C58 /* dsBridge */ = {
+			isa = PBXGroup;
+			children = (
+				94743FEA25501082005C2C58 /* dsbridge.h */,
+				94743FEB25501082005C2C58 /* InternalApis.h */,
+				94743FEC25501082005C2C58 /* DSCallInfo.m */,
+				94743FED25501082005C2C58 /* JSBUtil.h */,
+				94743FEE25501082005C2C58 /* DWKWebView.h */,
+				94743FEF25501082005C2C58 /* DSCallInfo.h */,
+				94743FF025501082005C2C58 /* InternalApis.m */,
+				94743FF125501082005C2C58 /* JSBUtil.m */,
+				94743FF225501082005C2C58 /* DWKWebView.m */,
+			);
+			path = dsBridge;
+			sourceTree = "<group>";
+		};
+		94743FF525501082005C2C58 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				94743FF625501082005C2C58 /* Reachability.m */,
+				94743FF725501082005C2C58 /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		94743FF825501082005C2C58 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				94743FF925501082005C2C58 /* ColorSelectionCollectionViewController.m */,
+				94743FFA25501082005C2C58 /* DWBubbleMenuButton.m */,
+				94743FFB25501082005C2C58 /* WhiteBoardWebView.h */,
+				94743FFC25501082005C2C58 /* ChatCell.h */,
+				94743FFD25501082005C2C58 /* BlinkExcelView.m */,
+				94743FFE25501082005C2C58 /* ZHPickView.h */,
+				94743FFF25501082005C2C58 /* SXAlertView.m */,
+				9474400025501082005C2C58 /* ChatAvatarView.h */,
+				9474400125501082005C2C58 /* RadioButton.m */,
+				9474400225501082005C2C58 /* MessageStatusBar.h */,
+				9474400325501082005C2C58 /* ExcelView */,
+				9474400F25501082005C2C58 /* ChatCell.m */,
+				9474401025501082005C2C58 /* WhiteBoardWebView.m */,
+				9474401125501082005C2C58 /* DWBubbleMenuButton.h */,
+				9474401225501082005C2C58 /* ColorSelectionCollectionViewController.h */,
+				9474401325501082005C2C58 /* BlinkExcelView.h */,
+				9474401425501082005C2C58 /* ChatAvatarView.m */,
+				9474401525501082005C2C58 /* SXAlertView.h */,
+				9474401625501082005C2C58 /* ZHPickView.m */,
+				9474401725501082005C2C58 /* MessageStatusBar.m */,
+				9474401825501082005C2C58 /* RadioButton.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		9474400325501082005C2C58 /* ExcelView */ = {
+			isa = PBXGroup;
+			children = (
+				9474400425501082005C2C58 /* YHExcelView.m */,
+				9474400525501082005C2C58 /* UIView+YHCategory.h */,
+				9474400625501082005C2C58 /* YHExcelViewColumn.h */,
+				9474400725501082005C2C58 /* YHExcelViewIndexPath.m */,
+				9474400825501082005C2C58 /* YHExcelTitleView.m */,
+				9474400925501082005C2C58 /* YHExcelViewColumn.m */,
+				9474400A25501082005C2C58 /* UIView+YHCategory.m */,
+				9474400B25501082005C2C58 /* YHExcel.h */,
+				9474400C25501082005C2C58 /* YHExcelView.h */,
+				9474400D25501082005C2C58 /* YHExcelViewIndexPath.h */,
+				9474400E25501082005C2C58 /* YHExcelTitleView.h */,
+			);
+			path = ExcelView;
+			sourceTree = "<group>";
+		};
+		9474401925501082005C2C58 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				9474401A25501082005C2C58 /* RongWhiteBoardMessage.m */,
+				9474401B25501082005C2C58 /* RongWhiteBoardMessage.h */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		9474401C25501082005C2C58 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9474401D25501082005C2C58 /* RCRTCVideoCaptureParam.m */,
+				9474401E25501082005C2C58 /* SettingViewBuilder.h */,
+				9474401F25501082005C2C58 /* PrivateCloud */,
+				9474402725501082005C2C58 /* RCRTCVideoCaptureParam+Private.h */,
+				9474402825501082005C2C58 /* SettingViewController.h */,
+				9474402925501082005C2C58 /* Delegate */,
+				9474403025501082005C2C58 /* SettingViewBuilder.m */,
+				9474403125501082005C2C58 /* RCRTCVideoCaptureParam.h */,
+				9474403225501082005C2C58 /* SettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		9474401F25501082005C2C58 /* PrivateCloud */ = {
+			isa = PBXGroup;
+			children = (
+				9474402025501082005C2C58 /* PrivateCloudSettingViewController.m */,
+				9474402125501082005C2C58 /* PrivateSettingCell.m */,
+				9474402225501082005C2C58 /* PrivateSettingCell.xib */,
+				9474402325501082005C2C58 /* UIView+Toast.h */,
+				9474402425501082005C2C58 /* PrivateCloudSettingViewController.h */,
+				9474402525501082005C2C58 /* PrivateSettingCell.h */,
+				9474402625501082005C2C58 /* UIView+Toast.m */,
+			);
+			path = PrivateCloud;
+			sourceTree = "<group>";
+		};
+		9474402925501082005C2C58 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9474402A25501082005C2C58 /* SettingTextFieldDelegateImpl.m */,
+				9474402B25501082005C2C58 /* SettingTableViewDelegateSourceImpl.h */,
+				9474402C25501082005C2C58 /* SettingPickViewDelegateImpl.h */,
+				9474402D25501082005C2C58 /* SettingTextFieldDelegateImpl.h */,
+				9474402E25501082005C2C58 /* SettingPickViewDelegateImpl.m */,
+				9474402F25501082005C2C58 /* SettingTableViewDelegateSourceImpl.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		9474403325501082005C2C58 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9474403425501082005C2C58 /* LoginManager.m */,
+				9474403525501082005C2C58 /* RTCLoginViewController.m */,
+				9474403625501082005C2C58 /* RCSelectView.m */,
+				9474403725501082005C2C58 /* RCBackView.h */,
+				9474403825501082005C2C58 /* RCSelectModel.h */,
+				9474403925501082005C2C58 /* LoginViewBuilder.m */,
+				9474403A25501082005C2C58 /* Delegate */,
+				9474403D25501082005C2C58 /* RTCLoginViewController.h */,
+				9474403E25501082005C2C58 /* LoginManager.h */,
+				9474403F25501082005C2C58 /* RCBackView.m */,
+				9474404025501082005C2C58 /* RCSelectView.h */,
+				9474404125501082005C2C58 /* LoginViewBuilder.h */,
+				9474404225501082005C2C58 /* RCSelectModel.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9474403A25501082005C2C58 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9474403B25501082005C2C58 /* LoginTextFieldDelegateImpl.h */,
+				9474403C25501082005C2C58 /* LoginTextFieldDelegateImpl.m */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		9474404325501082005C2C58 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9474404425501082005C2C58 /* RCFetchTokenManager.h */,
+				9474404525501082005C2C58 /* RTHttpNetworkWorker.h */,
+				9474404625501082005C2C58 /* UIColor+Helper.h */,
+				9474404725501082005C2C58 /* CommonUtility.m */,
+				9474404825501082005C2C58 /* WhiteUtils.h */,
+				9474404925501082005C2C58 /* UIColor+Helper.m */,
+				9474404A25501082005C2C58 /* RTHttpNetworkWorker.m */,
+				9474404B25501082005C2C58 /* RCFetchTokenManager.m */,
+				9474404C25501082005C2C58 /* WhiteUtils.m */,
+				9474404D25501082005C2C58 /* CommonUtility.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		BE901C93C89A3EE1AE173CA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08232AE9584FFCB5CD697E62 /* Pods-DoctorClient.debug.xcconfig */,
+				6F7552730E89B3C4AF5B315F /* Pods-DoctorClient.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3918EDF6226D67F9004676C7 /* DoctorClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3918EE0D226D67FB004676C7 /* Build configuration list for PBXNativeTarget "DoctorClient" */;
+			buildPhases = (
+				FEBF8C7B7BB7DE70B6D1E8B9 /* [CP] Check Pods Manifest.lock */,
+				3918EDF3226D67F9004676C7 /* Sources */,
+				3918EDF4226D67F9004676C7 /* Frameworks */,
+				3918EDF5226D67F9004676C7 /* Resources */,
+				CA3E08DE0FC71A492BB63FA7 /* [CP] Embed Pods Frameworks */,
+				DA28EE736C4C3F8DE13D5563 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoctorClient;
+			productName = DoctorClient;
+			productReference = 3918EDF7226D67F9004676C7 /* DC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3918EDEF226D67F9004676C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PXD;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "皮小度";
+				TargetAttributes = {
+					3918EDF6226D67F9004676C7 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3918EDF2226D67F9004676C7 /* Build configuration list for PBXProject "DoctorClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 3918EDEE226D67F9004676C7;
+			productRefGroup = 3918EDF8226D67F9004676C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3918EDF6226D67F9004676C7 /* DoctorClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3918EDF5226D67F9004676C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				947440AA25501082005C2C58 /* Whiteboard.bundle in Resources */,
+				9474407725501082005C2C58 /* video_demo2_low.mp4 in Resources */,
+				9474404E25501082005C2C58 /* FrameRate.plist in Resources */,
+				3918EE04226D67FB004676C7 /* Assets.xcassets in Resources */,
+				9474406A25501082005C2C58 /* ChatMemberCell.xib in Resources */,
+				9474407325501082005C2C58 /* video_demo1_low.mp4 in Resources */,
+				947440C625501082005C2C58 /* PrivateSettingCell.xib in Resources */,
+				9474405225501082005C2C58 /* CodingStyle.plist in Resources */,
+				9474407425501082005C2C58 /* voip_network_error_sound.wav in Resources */,
+				9474405125501082005C2C58 /* ResolutionRatio.plist in Resources */,
+				9474404F25501082005C2C58 /* Dynamic_resolution.plist in Resources */,
+				9474405025501082005C2C58 /* CodeRate.plist in Resources */,
+				946273AA253D982B0068494D /* sound.gif in Resources */,
+				9474407225501082005C2C58 /* my_homeland.aac in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA3E08DE0FC71A492BB63FA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorClient/Pods-DoctorClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorClient/Pods-DoctorClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoctorClient/Pods-DoctorClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA28EE736C4C3F8DE13D5563 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorClient/Pods-DoctorClient-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DoctorClient/Pods-DoctorClient-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DoctorClient/Pods-DoctorClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEBF8C7B7BB7DE70B6D1E8B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoctorClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3918EDF3226D67F9004676C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9474405625501082005C2C58 /* STJSONModel.m in Sources */,
+				9474406725501082005C2C58 /* ChatRongRTCRoomDelegateImpl.m in Sources */,
+				947020D8251D96F700DC89F4 /* PXDTabbarController.m in Sources */,
+				9474406525501082005C2C58 /* ChatBubbleMenuViewDelegateImpl.m in Sources */,
+				947440A825501082005C2C58 /* WhiteCombinePlayer.m in Sources */,
+				9474407625501082005C2C58 /* RTActiveWheel.m in Sources */,
+				9474408325501082005C2C58 /* WhiteBroadcastState.m in Sources */,
+				947440AC25501082005C2C58 /* DSCallInfo.m in Sources */,
+				9474407A25501082005C2C58 /* ChatManager.m in Sources */,
+				947440B725501082005C2C58 /* RadioButton.m in Sources */,
+				947440A025501082005C2C58 /* WhiteRectangleConfig.m in Sources */,
+				9474409025501082005C2C58 /* WhiteGlobalState.m in Sources */,
+				9474409725501082005C2C58 /* WhitePlayerState.m in Sources */,
+				947440CC25501082005C2C58 /* SettingViewController.m in Sources */,
+				947020C6251D944E00DC89F4 /* FMNavigationBar.m in Sources */,
+				947020C7251D944E00DC89F4 /* FMNavBaseViewController.m in Sources */,
+				947440C125501082005C2C58 /* MessageStatusBar.m in Sources */,
+				9474407125501082005C2C58 /* ChatDataInfoModel.m in Sources */,
+				9474409425501082005C2C58 /* WhitePlayerConfig.m in Sources */,
+				947440B325501082005C2C58 /* ColorSelectionCollectionViewController.m in Sources */,
+				947440BD25501082005C2C58 /* ChatCell.m in Sources */,
+				947440AD25501082005C2C58 /* InternalApis.m in Sources */,
+				4483E2DE23A7338C00D7C020 /* WMMenuView.m in Sources */,
+				9474409325501082005C2C58 /* WhiteSDK+Replayer.m in Sources */,
+				9474406425501082005C2C58 /* ChatRongAudioRTCEncryptorDelegateImpl.m in Sources */,
+				9474408E25501082005C2C58 /* WhiteWebViewInjection.m in Sources */,
+				9474408125501082005C2C58 /* GPUImageBeautyFilter.m in Sources */,
+				9474408725501082005C2C58 /* WhiteSDK+Room.m in Sources */,
+				947440A125501082005C2C58 /* WhiteCameraBound.m in Sources */,
+				9474406025501082005C2C58 /* ChatMembersViewController.m in Sources */,
+				9474409D25501082005C2C58 /* WhiteSceneState.m in Sources */,
+				3918EE35226D8A4D004676C7 /* MineViewController.m in Sources */,
+				9474408625501082005C2C58 /* WhiteRoom.m in Sources */,
+				947440C525501082005C2C58 /* PrivateSettingCell.m in Sources */,
+				947440A925501082005C2C58 /* WhiteSliderView.m in Sources */,
+				9474407C25501082005C2C58 /* STAudioModeViewController.m in Sources */,
+				947440D525501082005C2C58 /* UIColor+Helper.m in Sources */,
+				947440B525501082005C2C58 /* BlinkExcelView.m in Sources */,
+				947440AE25501082005C2C58 /* JSBUtil.m in Sources */,
+				947440BC25501082005C2C58 /* UIView+YHCategory.m in Sources */,
+				9474409525501082005C2C58 /* WhitePlayerTimeInfo.m in Sources */,
+				947440BB25501082005C2C58 /* YHExcelViewColumn.m in Sources */,
+				9474409B25501082005C2C58 /* WhiteObject.m in Sources */,
+				9474406925501082005C2C58 /* ChatRongAudioRTCDecryptorDelegateImpl.m in Sources */,
+				947440C325501082005C2C58 /* RCRTCVideoCaptureParam.m in Sources */,
+				947440A225501082005C2C58 /* WhiteMemberInformation.m in Sources */,
+				947440D225501082005C2C58 /* RCBackView.m in Sources */,
+				947440D425501082005C2C58 /* CommonUtility.m in Sources */,
+				947440C825501082005C2C58 /* SettingTextFieldDelegateImpl.m in Sources */,
+				947440A525501082005C2C58 /* WhiteSdkConfiguration.m in Sources */,
+				9474409A25501082005C2C58 /* WhiteConsts.m in Sources */,
+				947020C5251D944E00DC89F4 /* UINavigationBar+handle.m in Sources */,
+				9474405F25501082005C2C58 /* UIScrollView+Responder.m in Sources */,
+				9474405A25501082005C2C58 /* STDeleteRoomInfoMessage.m in Sources */,
+				947020CB251D945A00DC89F4 /* FMBaseScrollViewController.m in Sources */,
+				9474407025501082005C2C58 /* ChatLocalDataInfoModel.m in Sources */,
+				9474408425501082005C2C58 /* WhiteRoomCallbacks.m in Sources */,
+				9474406D25501082005C2C58 /* ChatWhiteBoardHandler.m in Sources */,
+				9474407E25501082005C2C58 /* UIViews+Localized.m in Sources */,
+				9474409825501082005C2C58 /* WhiteScene.m in Sources */,
+				9474406225501082005C2C58 /* ChatCollectionViewDataSourceDelegateImpl.m in Sources */,
+				947440D825501082005C2C58 /* WhiteUtils.m in Sources */,
+				947440CF25501082005C2C58 /* RCSelectView.m in Sources */,
+				947440A425501082005C2C58 /* WhiteEvent.m in Sources */,
+				9474409C25501082005C2C58 /* WhitePptPage.m in Sources */,
+				94B0E054252189F2006E081A /* PXDBaseViewController.m in Sources */,
+				9474408525501082005C2C58 /* WhiteImageInformation.m in Sources */,
+				9474406E25501082005C2C58 /* ChatGPUImageHandler.m in Sources */,
+				9474406625501082005C2C58 /* ChatRongRTCNetworkMonitorDelegateImpl.m in Sources */,
+				9474408F25501082005C2C58 /* WhiteDisplayer.m in Sources */,
+				9474408225501082005C2C58 /* WhiteRoomState.m in Sources */,
+				9474406825501082005C2C58 /* ChatRongVideoRTCEncryptorDelegateImpl.m in Sources */,
+				947440C725501082005C2C58 /* UIView+Toast.m in Sources */,
+				947440D725501082005C2C58 /* RCFetchTokenManager.m in Sources */,
+				9474409925501082005C2C58 /* WhiteRoomMember.m in Sources */,
+				947440A625501082005C2C58 /* WhiteSDK.m in Sources */,
+				947440B225501082005C2C58 /* Reachability.m in Sources */,
+				9474407925501082005C2C58 /* RCRTCFileSource.m in Sources */,
+				947440CB25501082005C2C58 /* SettingViewBuilder.m in Sources */,
+				947440D125501082005C2C58 /* LoginTextFieldDelegateImpl.m in Sources */,
+				947440B625501082005C2C58 /* SXAlertView.m in Sources */,
+				9474407825501082005C2C58 /* RongAudioVolumeControl.m in Sources */,
+				945D157F2521C55D0045D23B /* PXDBaseTableViewController.m in Sources */,
+				9474406C25501082005C2C58 /* ChatViewBuilder.m in Sources */,
+				9474405325501082005C2C58 /* STParticipantsTableViewHeader.m in Sources */,
+				947440D325501082005C2C58 /* RCSelectModel.m in Sources */,
+				947440CE25501082005C2C58 /* RTCLoginViewController.m in Sources */,
+				4483E2DB23A7338C00D7C020 /* WMPageController.m in Sources */,
+				947440BF25501082005C2C58 /* ChatAvatarView.m in Sources */,
+				9474406B25501082005C2C58 /* ChatMemberCell.m in Sources */,
+				9474406125501082005C2C58 /* ChatViewController.m in Sources */,
+				947440BE25501082005C2C58 /* WhiteBoardWebView.m in Sources */,
+				947440C225501082005C2C58 /* RongWhiteBoardMessage.m in Sources */,
+				3918EE0A226D67FB004676C7 /* main.m in Sources */,
+				9474405825501082005C2C58 /* STSetRoomInfoMessage.m in Sources */,
+				9474408A25501082005C2C58 /* WhiteConverter.m in Sources */,
+				947440A725501082005C2C58 /* WhiteVideoView.m in Sources */,
+				9474408B25501082005C2C58 /* WhiteOriginPrefetcher.m in Sources */,
+				9474405C25501082005C2C58 /* UICollectionView+RongRTCBgView.m in Sources */,
+				9474405B25501082005C2C58 /* UIColor+ColorChange.m in Sources */,
+				947440AF25501082005C2C58 /* DWKWebView.m in Sources */,
+				9474408D25501082005C2C58 /* WhiteDisplayerState.m in Sources */,
+				9474408C25501082005C2C58 /* WhiteCommonCallbacks.m in Sources */,
+				9474409E25501082005C2C58 /* WhiteMemberState.m in Sources */,
+				947440C425501082005C2C58 /* PrivateCloudSettingViewController.m in Sources */,
+				947440A325501082005C2C58 /* WhiteCameraConfig.m in Sources */,
+				9474409625501082005C2C58 /* WhitePlayer.m in Sources */,
+				9474405525501082005C2C58 /* STParticipantsInfo.m in Sources */,
+				9474407D25501082005C2C58 /* STAudioMixingPannelController.m in Sources */,
+				9474406325501082005C2C58 /* ChatRongVideoRTCDecryptorDelegateImpl.m in Sources */,
+				9474405E25501082005C2C58 /* NSString+length.m in Sources */,
+				947440B825501082005C2C58 /* YHExcelView.m in Sources */,
+				9474405425501082005C2C58 /* STKickOffInfoMessage.m in Sources */,
+				3918EE2D226D89E3004676C7 /* HomeViewController.m in Sources */,
+				947440CA25501082005C2C58 /* SettingTableViewDelegateSourceImpl.m in Sources */,
+				3918EE1C226D712B004676C7 /* AppDelegate.m in Sources */,
+				9474408025501082005C2C58 /* GPUImageOutputCamera.m in Sources */,
+				9474405925501082005C2C58 /* STParticipantsTableViewController.m in Sources */,
+				947440BA25501082005C2C58 /* YHExcelTitleView.m in Sources */,
+				9474407525501082005C2C58 /* RongRTCGPUPreviewView.m in Sources */,
+				4483E2DD23A7338C00D7C020 /* WMScrollView.m in Sources */,
+				4483E2DC23A7338C00D7C020 /* WMMenuItem.m in Sources */,
+				9474407B25501082005C2C58 /* STAudioMixerConfiguration.m in Sources */,
+				9474405D25501082005C2C58 /* UINavigationController+returnBack.m in Sources */,
+				947440C925501082005C2C58 /* SettingPickViewDelegateImpl.m in Sources */,
+				9474408925501082005C2C58 /* WhiteConversionInfo.m in Sources */,
+				9474405725501082005C2C58 /* STPresentationViewController.m in Sources */,
+				947440C025501082005C2C58 /* ZHPickView.m in Sources */,
+				9474409F25501082005C2C58 /* WhitePanEvent.m in Sources */,
+				9474409225501082005C2C58 /* WhitePlayerEvent.m in Sources */,
+				947440CD25501082005C2C58 /* LoginManager.m in Sources */,
+				947440D025501082005C2C58 /* LoginViewBuilder.m in Sources */,
+				947440B925501082005C2C58 /* YHExcelViewIndexPath.m in Sources */,
+				4483E2DF23A7338C00D7C020 /* WMProgressView.m in Sources */,
+				947440D625501082005C2C58 /* RTHttpNetworkWorker.m in Sources */,
+				9474406F25501082005C2C58 /* ChatCellVideoViewModel.m in Sources */,
+				9474409125501082005C2C58 /* WhiteBoardView.m in Sources */,
+				9474408825501082005C2C58 /* WhiteRoomConfig.m in Sources */,
+				947440B425501082005C2C58 /* DWBubbleMenuButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3918EE0B226D67FB004676C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3918EE0C226D67FB004676C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3918EE0E226D67FB004676C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08232AE9584FFCB5CD697E62 /* Pods-DoctorClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.3.1;
+				DEVELOPMENT_TEAM = 9V696TD84F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DoctorClient",
+					"$(PROJECT_DIR)/DoctorClient/Controller/视频问诊/MeetingChat/Framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DoctorClient/DoctorClient.pch";
+				INFOPLIST_FILE = DoctorClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DoctorClient/Controller/视频问诊/MeetingChat/3rd",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixiaodu.test4;
+				PRODUCT_NAME = DC;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3918EE0F226D67FB004676C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7552730E89B3C4AF5B315F /* Pods-DoctorClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.3.1;
+				DEVELOPMENT_TEAM = 9V696TD84F;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DoctorClient",
+					"$(PROJECT_DIR)/DoctorClient/Controller/视频问诊/MeetingChat/Framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/DoctorClient/DoctorClient.pch";
+				INFOPLIST_FILE = DoctorClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DoctorClient/Controller/视频问诊/MeetingChat/3rd",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixiaodu.test4;
+				PRODUCT_NAME = DC;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3918EDF2226D67F9004676C7 /* Build configuration list for PBXProject "DoctorClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3918EE0B226D67FB004676C7 /* Debug */,
+				3918EE0C226D67FB004676C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3918EE0D226D67FB004676C7 /* Build configuration list for PBXNativeTarget "DoctorClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3918EE0E226D67FB004676C7 /* Debug */,
+				3918EE0F226D67FB004676C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3918EDEF226D67F9004676C7 /* Project object */;
+}

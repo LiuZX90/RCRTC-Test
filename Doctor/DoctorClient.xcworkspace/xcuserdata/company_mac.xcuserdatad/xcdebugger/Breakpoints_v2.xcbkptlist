@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "86C81E7D-0FF0-4EC5-BD60-B753A30D7F87"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BEF9D439-0DCD-4A46-B453-263ACFA647F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DoctorClient/Controller/1-&#x9996;&#x9875;/&#x9996;&#x9875;VC/HomeViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "-connectWithToken"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BEF9D439-0DCD-4A46-B453-263ACFA647F5 - 80954815b5708dcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HomeViewController connectWithToken]"
+                  moduleName = "DC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/company_mac/Desktop/ResetProject/Doctor/DoctorClient/Controller/1-%E9%A6%96%E9%A1%B5/%E9%A6%96%E9%A1%B5VC/HomeViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "BEF9D439-0DCD-4A46-B453-263ACFA647F5 - 2c6ce1cd9ef85b1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__38-[HomeViewController connectWithToken]_block_invoke"
+                  moduleName = "DC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/company_mac/Desktop/ResetProject/Doctor/DoctorClient/Controller/1-%E9%A6%96%E9%A1%B5/%E9%A6%96%E9%A1%B5VC/HomeViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66F8BA41-4887-4909-9D25-5DC4DA68A089"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DoctorClient/Controller/1-&#x9996;&#x9875;/&#x9996;&#x9875;VC/HomeViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "-joinRoom"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
